@@ -1,0 +1,35 @@
+# Utility Libraries
+scikit-image
+numpy
+matplotlib
+pandas
+seaborn
+ipykernel
+python-dotenv
+pycuda==2023.1
+cuda-python==12.3.0
+scikit-learn
+
+# Training Libraries
+tensorflow[and-cuda]==2.14.1
+torchvision==0.16.2
+torch==2.1.2
+torchaudio==2.1.2
+
+
+# Infrence Utility Libraries
+onnx==1.14.1
+keras2onnx==1.7.0
+tf2onnx==1.15.1
+onnx2torch==1.5.13
+# Install at the very last
+# onnx_graphsurgeon --index-url https://pypi.ngc.nvidia.com
+netron==7.3.5 # For model viewing
+colored==2.2.4
+
+# Inference Libraries
+tensorrt
+# To check if an onnx model can parse and build into a trt engine
+polygraphy --extra-index-url https://pypi.ngc.nvidia.com
+onnxruntime-gpu==1.16.3
+nvidia-ml-py3==7.352.0

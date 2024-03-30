@@ -1,0 +1,421 @@
+thread,region_idf,file,line,function,visits,device_name,energy,time
+0,onnxrt_8_0,,0,,1,NVIDIA TITAN X (Pascal),8189000,448976
+0,onnxrt_8_0,,0,,1,NVIDIA TITAN X (Pascal),96034000,448869
+0,onnxrt_8_0,,0,,1,CPU-0.package-0,15235618,448834
+0,onnxrt_8_0,,0,,1,CPU-0.dram,2250890,448888
+0,onnxrt_8_0,,0,,1,CPU-1.package-1,10396275,448887
+0,onnxrt_8_0,,0,,1,CPU-1.dram,1126708,448886
+0,onnxrt_8_1,,0,,1,NVIDIA TITAN X (Pascal),8096000,451278
+0,onnxrt_8_1,,0,,1,NVIDIA TITAN X (Pascal),96162000,452768
+0,onnxrt_8_1,,0,,1,CPU-0.package-0,15013145,449745
+0,onnxrt_8_1,,0,,1,CPU-0.dram,2212426,449756
+0,onnxrt_8_1,,0,,1,CPU-1.package-1,10470188,449761
+0,onnxrt_8_1,,0,,1,CPU-1.dram,1048738,449771
+0,onnxrt_8_2,,0,,1,NVIDIA TITAN X (Pascal),8364000,456605
+0,onnxrt_8_2,,0,,1,NVIDIA TITAN X (Pascal),96494000,458158
+0,onnxrt_8_2,,0,,1,CPU-0.package-0,15290244,459616
+0,onnxrt_8_2,,0,,1,CPU-0.dram,2246254,459662
+0,onnxrt_8_2,,0,,1,CPU-1.package-1,10618137,459668
+0,onnxrt_8_2,,0,,1,CPU-1.dram,1005011,459677
+0,onnxrt_8_3,,0,,1,NVIDIA TITAN X (Pascal),8087000,448307
+0,onnxrt_8_3,,0,,1,NVIDIA TITAN X (Pascal),95128000,449866
+0,onnxrt_8_3,,0,,1,CPU-0.package-0,15290732,451338
+0,onnxrt_8_3,,0,,1,CPU-0.dram,2237105,451409
+0,onnxrt_8_3,,0,,1,CPU-1.package-1,10418125,451414
+0,onnxrt_8_3,,0,,1,CPU-1.dram,1112938,451420
+0,onnxrt_8_4,,0,,1,NVIDIA TITAN X (Pascal),8119000,447469
+0,onnxrt_8_4,,0,,1,NVIDIA TITAN X (Pascal),94967000,449006
+0,onnxrt_8_4,,0,,1,CPU-0.package-0,15057029,450469
+0,onnxrt_8_4,,0,,1,CPU-0.dram,2237840,450518
+0,onnxrt_8_4,,0,,1,CPU-1.package-1,10489414,450524
+0,onnxrt_8_4,,0,,1,CPU-1.dram,1027013,450528
+0,onnxrt_8_5,,0,,1,NVIDIA TITAN X (Pascal),8142000,449608
+0,onnxrt_8_5,,0,,1,NVIDIA TITAN X (Pascal),95262000,451154
+0,onnxrt_8_5,,0,,1,CPU-0.package-0,15130332,452651
+0,onnxrt_8_5,,0,,1,CPU-0.dram,2266312,452709
+0,onnxrt_8_5,,0,,1,CPU-1.package-1,10445347,452713
+0,onnxrt_8_5,,0,,1,CPU-1.dram,986713,452719
+0,onnxrt_8_6,,0,,1,NVIDIA TITAN X (Pascal),8131000,449684
+0,onnxrt_8_6,,0,,1,NVIDIA TITAN X (Pascal),95862000,451263
+0,onnxrt_8_6,,0,,1,CPU-0.package-0,15245872,455965
+0,onnxrt_8_6,,0,,1,CPU-0.dram,2266955,456006
+0,onnxrt_8_6,,0,,1,CPU-1.package-1,10586826,456010
+0,onnxrt_8_6,,0,,1,CPU-1.dram,1039941,456017
+0,onnxrt_8_7,,0,,1,NVIDIA TITAN X (Pascal),8344000,447462
+0,onnxrt_8_7,,0,,1,NVIDIA TITAN X (Pascal),95336000,449040
+0,onnxrt_8_7,,0,,1,CPU-0.package-0,15139182,450548
+0,onnxrt_8_7,,0,,1,CPU-0.dram,2186937,450627
+0,onnxrt_8_7,,0,,1,CPU-1.package-1,10449803,450631
+0,onnxrt_8_7,,0,,1,CPU-1.dram,1039865,450639
+0,onnxrt_8_8,,0,,1,NVIDIA TITAN X (Pascal),8171000,448790
+0,onnxrt_8_8,,0,,1,NVIDIA TITAN X (Pascal),95833000,450321
+0,onnxrt_8_8,,0,,1,CPU-0.package-0,15082664,451815
+0,onnxrt_8_8,,0,,1,CPU-0.dram,2300416,451873
+0,onnxrt_8_8,,0,,1,CPU-1.package-1,10521396,451877
+0,onnxrt_8_8,,0,,1,CPU-1.dram,1027548,451882
+0,onnxrt_8_9,,0,,1,NVIDIA TITAN X (Pascal),8060000,447088
+0,onnxrt_8_9,,0,,1,NVIDIA TITAN X (Pascal),95406000,448595
+0,onnxrt_8_9,,0,,1,CPU-0.package-0,15057578,450112
+0,onnxrt_8_9,,0,,1,CPU-0.dram,2204669,450170
+0,onnxrt_8_9,,0,,1,CPU-1.package-1,10384617,450175
+0,onnxrt_8_9,,0,,1,CPU-1.dram,981097,450180
+0,onnxrt_16_0,,0,,1,NVIDIA TITAN X (Pascal),7177000,395872
+0,onnxrt_16_0,,0,,1,NVIDIA TITAN X (Pascal),89742000,395881
+0,onnxrt_16_0,,0,,1,CPU-0.package-0,13217373,394144
+0,onnxrt_16_0,,0,,1,CPU-0.dram,1984165,394151
+0,onnxrt_16_0,,0,,1,CPU-1.package-1,9154640,394150
+0,onnxrt_16_0,,0,,1,CPU-1.dram,862614,394152
+0,onnxrt_16_1,,0,,1,NVIDIA TITAN X (Pascal),7183000,394666
+0,onnxrt_16_1,,0,,1,NVIDIA TITAN X (Pascal),90573000,396219
+0,onnxrt_16_1,,0,,1,CPU-0.package-0,13528530,397688
+0,onnxrt_16_1,,0,,1,CPU-0.dram,1988342,397743
+0,onnxrt_16_1,,0,,1,CPU-1.package-1,9310584,397746
+0,onnxrt_16_1,,0,,1,CPU-1.dram,1016562,397747
+0,onnxrt_16_2,,0,,1,NVIDIA TITAN X (Pascal),7183000,391924
+0,onnxrt_16_2,,0,,1,NVIDIA TITAN X (Pascal),90312000,393377
+0,onnxrt_16_2,,0,,1,CPU-0.package-0,13215909,394838
+0,onnxrt_16_2,,0,,1,CPU-0.dram,1977173,394888
+0,onnxrt_16_2,,0,,1,CPU-1.package-1,9172645,394878
+0,onnxrt_16_2,,0,,1,CPU-1.dram,891592,394883
+0,onnxrt_16_3,,0,,1,NVIDIA TITAN X (Pascal),7372000,402001
+0,onnxrt_16_3,,0,,1,NVIDIA TITAN X (Pascal),91274000,403513
+0,onnxrt_16_3,,0,,1,CPU-0.package-0,13510158,404972
+0,onnxrt_16_3,,0,,1,CPU-0.dram,1998272,405032
+0,onnxrt_16_3,,0,,1,CPU-1.package-1,9379065,405037
+0,onnxrt_16_3,,0,,1,CPU-1.dram,902608,405042
+0,onnxrt_16_4,,0,,1,NVIDIA TITAN X (Pascal),7109000,391694
+0,onnxrt_16_4,,0,,1,NVIDIA TITAN X (Pascal),90650000,393252
+0,onnxrt_16_4,,0,,1,CPU-0.package-0,13213467,394739
+0,onnxrt_16_4,,0,,1,CPU-0.dram,1969722,394810
+0,onnxrt_16_4,,0,,1,CPU-1.package-1,9179298,394815
+0,onnxrt_16_4,,0,,1,CPU-1.dram,862583,394822
+0,onnxrt_16_5,,0,,1,NVIDIA TITAN X (Pascal),7157000,392249
+0,onnxrt_16_5,,0,,1,NVIDIA TITAN X (Pascal),91010000,393804
+0,onnxrt_16_5,,0,,1,CPU-0.package-0,13248746,395269
+0,onnxrt_16_5,,0,,1,CPU-0.dram,1982757,395304
+0,onnxrt_16_5,,0,,1,CPU-1.package-1,9111366,395306
+0,onnxrt_16_5,,0,,1,CPU-1.dram,876170,395308
+0,onnxrt_16_6,,0,,1,NVIDIA TITAN X (Pascal),7180000,394513
+0,onnxrt_16_6,,0,,1,NVIDIA TITAN X (Pascal),91773000,396055
+0,onnxrt_16_6,,0,,1,CPU-0.package-0,13365993,399051
+0,onnxrt_16_6,,0,,1,CPU-0.dram,1992580,399104
+0,onnxrt_16_6,,0,,1,CPU-1.package-1,9293250,399107
+0,onnxrt_16_6,,0,,1,CPU-1.dram,892617,399114
+0,onnxrt_16_7,,0,,1,NVIDIA TITAN X (Pascal),7130000,391772
+0,onnxrt_16_7,,0,,1,NVIDIA TITAN X (Pascal),90844000,393281
+0,onnxrt_16_7,,0,,1,CPU-0.package-0,13219510,394774
+0,onnxrt_16_7,,0,,1,CPU-0.dram,1973272,394835
+0,onnxrt_16_7,,0,,1,CPU-1.package-1,9142860,394838
+0,onnxrt_16_7,,0,,1,CPU-1.dram,873707,394844
+0,onnxrt_16_8,,0,,1,NVIDIA TITAN X (Pascal),7276000,396556
+0,onnxrt_16_8,,0,,1,NVIDIA TITAN X (Pascal),90516000,398113
+0,onnxrt_16_8,,0,,1,CPU-0.package-0,13209500,395112
+0,onnxrt_16_8,,0,,1,CPU-0.dram,1976499,395159
+0,onnxrt_16_8,,0,,1,CPU-1.package-1,9112892,395164
+0,onnxrt_16_8,,0,,1,CPU-1.dram,879566,395169
+0,onnxrt_16_9,,0,,1,NVIDIA TITAN X (Pascal),7207000,398175
+0,onnxrt_16_9,,0,,1,NVIDIA TITAN X (Pascal),90857000,399727
+0,onnxrt_16_9,,0,,1,CPU-0.package-0,13539333,396826
+0,onnxrt_16_9,,0,,1,CPU-0.dram,1996834,396866
+0,onnxrt_16_9,,0,,1,CPU-1.package-1,9243873,396872
+0,onnxrt_16_9,,0,,1,CPU-1.dram,1000054,396878
+0,onnxrt_32_0,,0,,1,NVIDIA TITAN X (Pascal),6740000,375385
+0,onnxrt_32_0,,0,,1,NVIDIA TITAN X (Pascal),89037000,375368
+0,onnxrt_32_0,,0,,1,CPU-0.package-0,12578215,374922
+0,onnxrt_32_0,,0,,1,CPU-0.dram,1863417,374933
+0,onnxrt_32_0,,0,,1,CPU-1.package-1,8830177,374930
+0,onnxrt_32_0,,0,,1,CPU-1.dram,876782,374933
+0,onnxrt_32_1,,0,,1,NVIDIA TITAN X (Pascal),6929000,375772
+0,onnxrt_32_1,,0,,1,NVIDIA TITAN X (Pascal),89177000,377326
+0,onnxrt_32_1,,0,,1,CPU-0.package-0,12539091,373350
+0,onnxrt_32_1,,0,,1,CPU-0.dram,1861827,373413
+0,onnxrt_32_1,,0,,1,CPU-1.package-1,8662270,373418
+0,onnxrt_32_1,,0,,1,CPU-1.dram,860059,373428
+0,onnxrt_32_2,,0,,1,NVIDIA TITAN X (Pascal),6785000,369294
+0,onnxrt_32_2,,0,,1,NVIDIA TITAN X (Pascal),89901000,371012
+0,onnxrt_32_2,,0,,1,CPU-0.package-0,12509123,372478
+0,onnxrt_32_2,,0,,1,CPU-0.dram,1861933,372518
+0,onnxrt_32_2,,0,,1,CPU-1.package-1,8687356,372522
+0,onnxrt_32_2,,0,,1,CPU-1.dram,868627,372528
+0,onnxrt_32_3,,0,,1,NVIDIA TITAN X (Pascal),6824000,372855
+0,onnxrt_32_3,,0,,1,NVIDIA TITAN X (Pascal),89840000,374429
+0,onnxrt_32_3,,0,,1,CPU-0.package-0,12651335,376813
+0,onnxrt_32_3,,0,,1,CPU-0.dram,1885327,376846
+0,onnxrt_32_3,,0,,1,CPU-1.package-1,8898720,376850
+0,onnxrt_32_3,,0,,1,CPU-1.dram,892250,376853
+0,onnxrt_32_4,,0,,1,NVIDIA TITAN X (Pascal),6819000,372523
+0,onnxrt_32_4,,0,,1,NVIDIA TITAN X (Pascal),89513000,371124
+0,onnxrt_32_4,,0,,1,CPU-0.package-0,12641813,376458
+0,onnxrt_32_4,,0,,1,CPU-0.dram,1865958,376509
+0,onnxrt_32_4,,0,,1,CPU-1.package-1,8725076,376512
+0,onnxrt_32_4,,0,,1,CPU-1.dram,840475,376514
+0,onnxrt_32_5,,0,,1,NVIDIA TITAN X (Pascal),6332000,370880
+0,onnxrt_32_5,,0,,1,NVIDIA TITAN X (Pascal),88636000,368861
+0,onnxrt_32_5,,0,,1,CPU-0.package-0,12447966,370549
+0,onnxrt_32_5,,0,,1,CPU-0.dram,1861949,370588
+0,onnxrt_32_5,,0,,1,CPU-1.package-1,8680581,370591
+0,onnxrt_32_5,,0,,1,CPU-1.dram,851338,370598
+0,onnxrt_32_6,,0,,1,NVIDIA TITAN X (Pascal),6750000,377787
+0,onnxrt_32_6,,0,,1,NVIDIA TITAN X (Pascal),88907000,377901
+0,onnxrt_32_6,,0,,1,CPU-0.package-0,12569304,374316
+0,onnxrt_32_6,,0,,1,CPU-0.dram,1845792,374375
+0,onnxrt_32_6,,0,,1,CPU-1.package-1,8688515,374379
+0,onnxrt_32_6,,0,,1,CPU-1.dram,841745,374390
+0,onnxrt_32_7,,0,,1,NVIDIA TITAN X (Pascal),6816000,377240
+0,onnxrt_32_7,,0,,1,NVIDIA TITAN X (Pascal),88983000,378792
+0,onnxrt_32_7,,0,,1,CPU-0.package-0,12593779,374913
+0,onnxrt_32_7,,0,,1,CPU-0.dram,1863004,374972
+0,onnxrt_32_7,,0,,1,CPU-1.package-1,8712808,374976
+0,onnxrt_32_7,,0,,1,CPU-1.dram,827546,374985
+0,onnxrt_32_8,,0,,1,NVIDIA TITAN X (Pascal),6774000,378239
+0,onnxrt_32_8,,0,,1,NVIDIA TITAN X (Pascal),88919000,379802
+0,onnxrt_32_8,,0,,1,CPU-0.package-0,12833281,376169
+0,onnxrt_32_8,,0,,1,CPU-0.dram,1878304,376211
+0,onnxrt_32_8,,0,,1,CPU-1.package-1,8824685,376215
+0,onnxrt_32_8,,0,,1,CPU-1.dram,951446,376223
+0,onnxrt_32_9,,0,,1,NVIDIA TITAN X (Pascal),6941000,376190
+0,onnxrt_32_9,,0,,1,NVIDIA TITAN X (Pascal),89014000,377776
+0,onnxrt_32_9,,0,,1,CPU-0.package-0,12574980,374733
+0,onnxrt_32_9,,0,,1,CPU-0.dram,1868772,374749
+0,onnxrt_32_9,,0,,1,CPU-1.package-1,8714150,374753
+0,onnxrt_32_9,,0,,1,CPU-1.dram,850114,374763
+0,onnxrt_64_0,,0,,1,NVIDIA TITAN X (Pascal),6366000,358158
+0,onnxrt_64_0,,0,,1,NVIDIA TITAN X (Pascal),83754000,357918
+0,onnxrt_64_0,,0,,1,CPU-0.package-0,12037872,357922
+0,onnxrt_64_0,,0,,1,CPU-0.dram,1763233,357913
+0,onnxrt_64_0,,0,,1,CPU-1.package-1,8360635,357911
+0,onnxrt_64_0,,0,,1,CPU-1.dram,808789,357904
+0,onnxrt_64_1,,0,,1,NVIDIA TITAN X (Pascal),6569000,353901
+0,onnxrt_64_1,,0,,1,NVIDIA TITAN X (Pascal),83727000,355483
+0,onnxrt_64_1,,0,,1,CPU-0.package-0,12073333,359051
+0,onnxrt_64_1,,0,,1,CPU-0.dram,1762193,359088
+0,onnxrt_64_1,,0,,1,CPU-1.package-1,8454751,359092
+0,onnxrt_64_1,,0,,1,CPU-1.dram,859065,359092
+0,onnxrt_64_2,,0,,1,NVIDIA TITAN X (Pascal),6375000,359177
+0,onnxrt_64_2,,0,,1,NVIDIA TITAN X (Pascal),86465000,358536
+0,onnxrt_64_2,,0,,1,CPU-0.package-0,12348418,360053
+0,onnxrt_64_2,,0,,1,CPU-0.dram,1794889,360068
+0,onnxrt_64_2,,0,,1,CPU-1.package-1,8526285,360070
+0,onnxrt_64_2,,0,,1,CPU-1.dram,971213,360078
+0,onnxrt_64_3,,0,,1,NVIDIA TITAN X (Pascal),6434000,352102
+0,onnxrt_64_3,,0,,1,NVIDIA TITAN X (Pascal),84864000,353688
+0,onnxrt_64_3,,0,,1,CPU-0.package-0,12033661,358290
+0,onnxrt_64_3,,0,,1,CPU-0.dram,1761153,358342
+0,onnxrt_64_3,,0,,1,CPU-1.package-1,8381204,358346
+0,onnxrt_64_3,,0,,1,CPU-1.dram,832151,358348
+0,onnxrt_64_4,,0,,1,NVIDIA TITAN X (Pascal),6390000,386419
+0,onnxrt_64_4,,0,,1,NVIDIA TITAN X (Pascal),84436000,359138
+0,onnxrt_64_4,,0,,1,CPU-0.package-0,11911651,356646
+0,onnxrt_64_4,,0,,1,CPU-0.dram,1755063,356698
+0,onnxrt_64_4,,0,,1,CPU-1.package-1,8299539,356699
+0,onnxrt_64_4,,0,,1,CPU-1.dram,818428,356705
+0,onnxrt_64_5,,0,,1,NVIDIA TITAN X (Pascal),6515000,354541
+0,onnxrt_64_5,,0,,1,NVIDIA TITAN X (Pascal),86261000,361186
+0,onnxrt_64_5,,0,,1,CPU-0.package-0,12141510,362799
+0,onnxrt_64_5,,0,,1,CPU-0.dram,1770531,362833
+0,onnxrt_64_5,,0,,1,CPU-1.package-1,8561685,362837
+0,onnxrt_64_5,,0,,1,CPU-1.dram,896458,362840
+0,onnxrt_64_6,,0,,1,NVIDIA TITAN X (Pascal),6532000,353656
+0,onnxrt_64_6,,0,,1,NVIDIA TITAN X (Pascal),84291000,355297
+0,onnxrt_64_6,,0,,1,CPU-0.package-0,12001922,356742
+0,onnxrt_64_6,,0,,1,CPU-0.dram,1752997,356785
+0,onnxrt_64_6,,0,,1,CPU-1.package-1,8340616,356790
+0,onnxrt_64_6,,0,,1,CPU-1.dram,823370,356796
+0,onnxrt_64_7,,0,,1,NVIDIA TITAN X (Pascal),6444000,352478
+0,onnxrt_64_7,,0,,1,NVIDIA TITAN X (Pascal),84849000,354062
+0,onnxrt_64_7,,0,,1,CPU-0.package-0,11963531,355589
+0,onnxrt_64_7,,0,,1,CPU-0.dram,1748576,355615
+0,onnxrt_64_7,,0,,1,CPU-1.package-1,8303079,355619
+0,onnxrt_64_7,,0,,1,CPU-1.dram,818014,355620
+0,onnxrt_64_8,,0,,1,NVIDIA TITAN X (Pascal),6502000,358990
+0,onnxrt_64_8,,0,,1,NVIDIA TITAN X (Pascal),85058000,355573
+0,onnxrt_64_8,,0,,1,CPU-0.package-0,12056671,359631
+0,onnxrt_64_8,,0,,1,CPU-0.dram,1751758,359665
+0,onnxrt_64_8,,0,,1,CPU-1.package-1,8489114,359670
+0,onnxrt_64_8,,0,,1,CPU-1.dram,861176,359674
+0,onnxrt_64_9,,0,,1,NVIDIA TITAN X (Pascal),6562000,356603
+0,onnxrt_64_9,,0,,1,NVIDIA TITAN X (Pascal),85725000,356167
+0,onnxrt_64_9,,0,,1,CPU-0.package-0,12039886,358231
+0,onnxrt_64_9,,0,,1,CPU-0.dram,1758383,358271
+0,onnxrt_64_9,,0,,1,CPU-1.package-1,8410074,358271
+0,onnxrt_64_9,,0,,1,CPU-1.dram,850068,358271
+0,onnxrt_128_0,,0,,1,NVIDIA TITAN X (Pascal),6311000,349455
+0,onnxrt_128_0,,0,,1,NVIDIA TITAN X (Pascal),81673000,349433
+0,onnxrt_128_0,,0,,1,CPU-0.package-0,12070098,351050
+0,onnxrt_128_0,,0,,1,CPU-0.dram,1711534,351065
+0,onnxrt_128_0,,0,,1,CPU-1.package-1,8236368,351064
+0,onnxrt_128_0,,0,,1,CPU-1.dram,878113,351060
+0,onnxrt_128_1,,0,,1,NVIDIA TITAN X (Pascal),6484000,355232
+0,onnxrt_128_1,,0,,1,NVIDIA TITAN X (Pascal),80328000,356840
+0,onnxrt_128_1,,0,,1,CPU-0.package-0,11986175,358301
+0,onnxrt_128_1,,0,,1,CPU-0.dram,1724111,358397
+0,onnxrt_128_1,,0,,1,CPU-1.package-1,8468362,358400
+0,onnxrt_128_1,,0,,1,CPU-1.dram,847253,358408
+0,onnxrt_128_2,,0,,1,NVIDIA TITAN X (Pascal),6326000,346041
+0,onnxrt_128_2,,0,,1,NVIDIA TITAN X (Pascal),80421000,347636
+0,onnxrt_128_2,,0,,1,CPU-0.package-0,11717926,349093
+0,onnxrt_128_2,,0,,1,CPU-0.dram,1660279,349132
+0,onnxrt_128_2,,0,,1,CPU-1.package-1,8141519,349135
+0,onnxrt_128_2,,0,,1,CPU-1.dram,803709,349137
+0,onnxrt_128_3,,0,,1,NVIDIA TITAN X (Pascal),6337000,348699
+0,onnxrt_128_3,,0,,1,NVIDIA TITAN X (Pascal),80910000,348355
+0,onnxrt_128_3,,0,,1,CPU-0.package-0,12011383,349857
+0,onnxrt_128_3,,0,,1,CPU-0.dram,1682189,349890
+0,onnxrt_128_3,,0,,1,CPU-1.package-1,8175577,349897
+0,onnxrt_128_3,,0,,1,CPU-1.dram,830209,349901
+0,onnxrt_128_4,,0,,1,NVIDIA TITAN X (Pascal),6440000,354958
+0,onnxrt_128_4,,0,,1,NVIDIA TITAN X (Pascal),81768000,356542
+0,onnxrt_128_4,,0,,1,CPU-0.package-0,13904140,353395
+0,onnxrt_128_4,,0,,1,CPU-0.dram,1835832,353382
+0,onnxrt_128_4,,0,,1,CPU-1.package-1,8380288,353384
+0,onnxrt_128_4,,0,,1,CPU-1.dram,875863,353393
+0,onnxrt_128_5,,0,,1,NVIDIA TITAN X (Pascal),6392000,347985
+0,onnxrt_128_5,,0,,1,NVIDIA TITAN X (Pascal),81752000,349612
+0,onnxrt_128_5,,0,,1,CPU-0.package-0,13933314,352603
+0,onnxrt_128_5,,0,,1,CPU-0.dram,1822766,352657
+0,onnxrt_128_5,,0,,1,CPU-1.package-1,8240213,352663
+0,onnxrt_128_5,,0,,1,CPU-1.dram,841576,352685
+0,onnxrt_128_6,,0,,1,NVIDIA TITAN X (Pascal),6545000,358738
+0,onnxrt_128_6,,0,,1,NVIDIA TITAN X (Pascal),82359000,360276
+0,onnxrt_128_6,,0,,1,CPU-0.package-0,14469812,362768
+0,onnxrt_128_6,,0,,1,CPU-0.dram,1841477,362811
+0,onnxrt_128_6,,0,,1,CPU-1.package-1,8525430,362819
+0,onnxrt_128_6,,0,,1,CPU-1.dram,869254,362823
+0,onnxrt_128_7,,0,,1,NVIDIA TITAN X (Pascal),6536000,358231
+0,onnxrt_128_7,,0,,1,NVIDIA TITAN X (Pascal),83258000,354964
+0,onnxrt_128_7,,0,,1,CPU-0.package-0,12263213,356455
+0,onnxrt_128_7,,0,,1,CPU-0.dram,1720546,356490
+0,onnxrt_128_7,,0,,1,CPU-1.package-1,8433084,356492
+0,onnxrt_128_7,,0,,1,CPU-1.dram,864374,356494
+0,onnxrt_128_8,,0,,1,NVIDIA TITAN X (Pascal),6392000,351694
+0,onnxrt_128_8,,0,,1,NVIDIA TITAN X (Pascal),82663000,347628
+0,onnxrt_128_8,,0,,1,CPU-0.package-0,11880279,352935
+0,onnxrt_128_8,,0,,1,CPU-0.dram,1690161,352966
+0,onnxrt_128_8,,0,,1,CPU-1.package-1,8197123,352969
+0,onnxrt_128_8,,0,,1,CPU-1.dram,759660,352966
+0,onnxrt_128_9,,0,,1,NVIDIA TITAN X (Pascal),6604000,359629
+0,onnxrt_128_9,,0,,1,NVIDIA TITAN X (Pascal),82017000,358360
+0,onnxrt_128_9,,0,,1,CPU-0.package-0,12045196,361052
+0,onnxrt_128_9,,0,,1,CPU-0.dram,1689870,361081
+0,onnxrt_128_9,,0,,1,CPU-1.package-1,8446877,361084
+0,onnxrt_128_9,,0,,1,CPU-1.dram,837614,361085
+0,onnxrt_256_0,,0,,1,NVIDIA TITAN X (Pascal),6409000,352802
+0,onnxrt_256_0,,0,,1,NVIDIA TITAN X (Pascal),81150000,352786
+0,onnxrt_256_0,,0,,1,CPU-0.package-0,11994843,358105
+0,onnxrt_256_0,,0,,1,CPU-0.dram,1627859,358054
+0,onnxrt_256_0,,0,,1,CPU-1.package-1,8411416,358054
+0,onnxrt_256_0,,0,,1,CPU-1.dram,830025,358049
+0,onnxrt_256_1,,0,,1,NVIDIA TITAN X (Pascal),6882000,373331
+0,onnxrt_256_1,,0,,1,NVIDIA TITAN X (Pascal),68301000,372430
+0,onnxrt_256_1,,0,,1,CPU-0.package-0,13016446,383723
+0,onnxrt_256_1,,0,,1,CPU-0.dram,1785127,383716
+0,onnxrt_256_1,,0,,1,CPU-1.package-1,9179481,383734
+0,onnxrt_256_1,,0,,1,CPU-1.dram,951369,383743
+0,onnxrt_256_2,,0,,1,NVIDIA TITAN X (Pascal),7259000,388947
+0,onnxrt_256_2,,0,,1,NVIDIA TITAN X (Pascal),60912000,390555
+0,onnxrt_256_2,,0,,1,CPU-0.package-0,13623378,402457
+0,onnxrt_256_2,,0,,1,CPU-0.dram,1851269,402478
+0,onnxrt_256_2,,0,,1,CPU-1.package-1,9389442,402480
+0,onnxrt_256_2,,0,,1,CPU-1.dram,929460,402482
+0,onnxrt_256_3,,0,,1,NVIDIA TITAN X (Pascal),7307000,389119
+0,onnxrt_256_3,,0,,1,NVIDIA TITAN X (Pascal),59825000,389912
+0,onnxrt_256_3,,0,,1,CPU-0.package-0,13154324,391381
+0,onnxrt_256_3,,0,,1,CPU-0.dram,1718420,391416
+0,onnxrt_256_3,,0,,1,CPU-1.package-1,9149573,391420
+0,onnxrt_256_3,,0,,1,CPU-1.dram,874747,391429
+0,onnxrt_256_4,,0,,1,NVIDIA TITAN X (Pascal),6788000,375603
+0,onnxrt_256_4,,0,,1,NVIDIA TITAN X (Pascal),64012000,377213
+0,onnxrt_256_4,,0,,1,CPU-0.package-0,12983731,385922
+0,onnxrt_256_4,,0,,1,CPU-0.dram,1765528,385949
+0,onnxrt_256_4,,0,,1,CPU-1.package-1,9226722,385952
+0,onnxrt_256_4,,0,,1,CPU-1.dram,925803,385955
+0,onnxrt_256_5,,0,,1,NVIDIA TITAN X (Pascal),6630000,355812
+0,onnxrt_256_5,,0,,1,NVIDIA TITAN X (Pascal),72192000,355047
+0,onnxrt_256_5,,0,,1,CPU-0.package-0,12156768,360962
+0,onnxrt_256_5,,0,,1,CPU-0.dram,1650977,360973
+0,onnxrt_256_5,,0,,1,CPU-1.package-1,8436136,360973
+0,onnxrt_256_5,,0,,1,CPU-1.dram,812507,360974
+0,onnxrt_256_6,,0,,1,NVIDIA TITAN X (Pascal),6507000,351872
+0,onnxrt_256_6,,0,,1,NVIDIA TITAN X (Pascal),79496000,347181
+0,onnxrt_256_6,,0,,1,CPU-0.package-0,11848480,352844
+0,onnxrt_256_6,,0,,1,CPU-0.dram,1624034,352903
+0,onnxrt_256_6,,0,,1,CPU-1.package-1,8235453,352904
+0,onnxrt_256_6,,0,,1,CPU-1.dram,794957,352906
+0,onnxrt_256_7,,0,,1,NVIDIA TITAN X (Pascal),6427000,349359
+0,onnxrt_256_7,,0,,1,NVIDIA TITAN X (Pascal),79009000,348238
+0,onnxrt_256_7,,0,,1,CPU-0.package-0,11912323,354568
+0,onnxrt_256_7,,0,,1,CPU-0.dram,1610906,354618
+0,onnxrt_256_7,,0,,1,CPU-1.package-1,8389016,354623
+0,onnxrt_256_7,,0,,1,CPU-1.dram,817754,354624
+0,onnxrt_256_8,,0,,1,NVIDIA TITAN X (Pascal),6769000,369869
+0,onnxrt_256_8,,0,,1,NVIDIA TITAN X (Pascal),70223000,368616
+0,onnxrt_256_8,,0,,1,CPU-0.package-0,12775969,380680
+0,onnxrt_256_8,,0,,1,CPU-0.dram,1712667,380711
+0,onnxrt_256_8,,0,,1,CPU-1.package-1,8936867,380715
+0,onnxrt_256_8,,0,,1,CPU-1.dram,862324,380715
+0,onnxrt_256_9,,0,,1,NVIDIA TITAN X (Pascal),7163000,385861
+0,onnxrt_256_9,,0,,1,NVIDIA TITAN X (Pascal),61829000,385722
+0,onnxrt_256_9,,0,,1,CPU-0.package-0,13305447,396134
+0,onnxrt_256_9,,0,,1,CPU-0.dram,1790880,396165
+0,onnxrt_256_9,,0,,1,CPU-1.package-1,9440894,396168
+0,onnxrt_256_9,,0,,1,CPU-1.dram,969729,396168
+0,onnxrt_512_0,,0,,1,NVIDIA TITAN X (Pascal),6948000,386672
+0,onnxrt_512_0,,0,,1,NVIDIA TITAN X (Pascal),68940000,386690
+0,onnxrt_512_0,,0,,1,CPU-0.package-0,12903653,384622
+0,onnxrt_512_0,,0,,1,CPU-0.dram,1633596,384622
+0,onnxrt_512_0,,0,,1,CPU-1.package-1,9027199,384622
+0,onnxrt_512_0,,0,,1,CPU-1.dram,859676,384624
+0,onnxrt_512_1,,0,,1,NVIDIA TITAN X (Pascal),7188000,391773
+0,onnxrt_512_1,,0,,1,NVIDIA TITAN X (Pascal),61525000,393546
+0,onnxrt_512_1,,0,,1,CPU-0.package-0,13452663,400327
+0,onnxrt_512_1,,0,,1,CPU-0.dram,1701116,400351
+0,onnxrt_512_1,,0,,1,CPU-1.package-1,9317481,400354
+0,onnxrt_512_1,,0,,1,CPU-1.dram,896947,400353
+0,onnxrt_512_2,,0,,1,NVIDIA TITAN X (Pascal),7175000,388474
+0,onnxrt_512_2,,0,,1,NVIDIA TITAN X (Pascal),63326000,388306
+0,onnxrt_512_2,,0,,1,CPU-0.package-0,13376492,389836
+0,onnxrt_512_2,,0,,1,CPU-0.dram,1750595,389841
+0,onnxrt_512_2,,0,,1,CPU-1.package-1,9193946,389844
+0,onnxrt_512_2,,0,,1,CPU-1.dram,959600,389851
+0,onnxrt_512_3,,0,,1,NVIDIA TITAN X (Pascal),7255000,399991
+0,onnxrt_512_3,,0,,1,NVIDIA TITAN X (Pascal),65181000,401586
+0,onnxrt_512_3,,0,,1,CPU-0.package-0,13379971,403050
+0,onnxrt_512_3,,0,,1,CPU-0.dram,1701865,403110
+0,onnxrt_512_3,,0,,1,CPU-1.package-1,9577246,403112
+0,onnxrt_512_3,,0,,1,CPU-1.dram,950742,403104
+0,onnxrt_512_4,,0,,1,NVIDIA TITAN X (Pascal),7313000,403383
+0,onnxrt_512_4,,0,,1,NVIDIA TITAN X (Pascal),61390000,404867
+0,onnxrt_512_4,,0,,1,CPU-0.package-0,13334866,396924
+0,onnxrt_512_4,,0,,1,CPU-0.dram,1690864,396953
+0,onnxrt_512_4,,0,,1,CPU-1.package-1,9409034,396957
+0,onnxrt_512_4,,0,,1,CPU-1.dram,933820,396951
+0,onnxrt_512_5,,0,,1,NVIDIA TITAN X (Pascal),7125000,396842
+0,onnxrt_512_5,,0,,1,NVIDIA TITAN X (Pascal),64001000,398390
+0,onnxrt_512_5,,0,,1,CPU-0.package-0,13338406,397797
+0,onnxrt_512_5,,0,,1,CPU-0.dram,1654191,397809
+0,onnxrt_512_5,,0,,1,CPU-1.package-1,9295081,397812
+0,onnxrt_512_5,,0,,1,CPU-1.dram,874150,397818
+0,onnxrt_512_6,,0,,1,NVIDIA TITAN X (Pascal),6830000,367333
+0,onnxrt_512_6,,0,,1,NVIDIA TITAN X (Pascal),69393000,367006
+0,onnxrt_512_6,,0,,1,CPU-0.package-0,12582182,374042
+0,onnxrt_512_6,,0,,1,CPU-0.dram,1568387,374031
+0,onnxrt_512_6,,0,,1,CPU-1.package-1,8734963,374034
+0,onnxrt_512_6,,0,,1,CPU-1.dram,832764,374035
+0,onnxrt_512_7,,0,,1,NVIDIA TITAN X (Pascal),6787000,369657
+0,onnxrt_512_7,,0,,1,NVIDIA TITAN X (Pascal),70512000,365769
+0,onnxrt_512_7,,0,,1,CPU-0.package-0,12381133,368174
+0,onnxrt_512_7,,0,,1,CPU-0.dram,1623789,368200
+0,onnxrt_512_7,,0,,1,CPU-1.package-1,8806984,368202
+0,onnxrt_512_7,,0,,1,CPU-1.dram,881709,368197
+0,onnxrt_512_8,,0,,1,NVIDIA TITAN X (Pascal),6689000,367435
+0,onnxrt_512_8,,0,,1,NVIDIA TITAN X (Pascal),70562000,366508
+0,onnxrt_512_8,,0,,1,CPU-0.package-0,12355620,368028
+0,onnxrt_512_8,,0,,1,CPU-0.dram,1565282,368053
+0,onnxrt_512_8,,0,,1,CPU-1.package-1,8643289,368054
+0,onnxrt_512_8,,0,,1,CPU-1.dram,825297,368058
+0,onnxrt_512_9,,0,,1,NVIDIA TITAN X (Pascal),6457000,355123
+0,onnxrt_512_9,,0,,1,NVIDIA TITAN X (Pascal),76987000,360585
+0,onnxrt_512_9,,0,,1,CPU-0.package-0,12177765,362082
+0,onnxrt_512_9,,0,,1,CPU-0.dram,1584621,362108
+0,onnxrt_512_9,,0,,1,CPU-1.package-1,8503518,362111
+0,onnxrt_512_9,,0,,1,CPU-1.dram,803113,362117

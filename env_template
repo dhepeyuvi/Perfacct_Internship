@@ -1,0 +1,9 @@
+CUDA_VISIBLE_DEVICES="0"
+TF_XLA_FLAGS="--tf_xla_auto_jit=2"
+# Replace X and Y with the cuda version
+CUDA_HOME="/usr/local/cuda-X.Y"
+XLA_FLAGS="--xla_gpu_cuda_data_dir=/usr/local/cuda-X.Y"
+POLYGRAPHY_AUTOINSTALL_DEPS=1
+POLYGRAPHY_ASK_BEFORE_INSTALL=1
+PYTHONPATH=/usr/local/EMA/python:.
+LD_LIBRARY_PATH="/usr/local/EMA/lib"

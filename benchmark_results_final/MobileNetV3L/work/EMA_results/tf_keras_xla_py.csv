@@ -1,0 +1,841 @@
+thread,region_idf,file,line,function,visits,device_name,energy,time
+0,tfxla_8_0,,0,,1,NVIDIA TITAN X (Pascal),15524000,878675
+0,tfxla_8_0,,0,,1,NVIDIA TITAN X (Pascal),110990000,878429
+0,tfxla_8_0,,0,,1,CPU-0.package-0,16734577,878335
+0,tfxla_8_0,,0,,1,CPU-0.dram,1879987,878335
+0,tfxla_8_0,,0,,1,CPU-1.package-1,17623429,878309
+0,tfxla_8_0,,0,,1,CPU-1.dram,4438546,878306
+0,tfxla_8_1,,0,,1,NVIDIA TITAN X (Pascal),15765000,878367
+0,tfxla_8_1,,0,,1,NVIDIA TITAN X (Pascal),112569000,879981
+0,tfxla_8_1,,0,,1,CPU-0.package-0,16748248,881492
+0,tfxla_8_1,,0,,1,CPU-0.dram,1855982,881535
+0,tfxla_8_1,,0,,1,CPU-1.package-1,17545976,881556
+0,tfxla_8_1,,0,,1,CPU-1.dram,4441376,881566
+0,tfxla_8_2,,0,,1,NVIDIA TITAN X (Pascal),15814000,882696
+0,tfxla_8_2,,0,,1,NVIDIA TITAN X (Pascal),113552000,884319
+0,tfxla_8_2,,0,,1,CPU-0.package-0,16931598,885784
+0,tfxla_8_2,,0,,1,CPU-0.dram,1957298,885848
+0,tfxla_8_2,,0,,1,CPU-1.package-1,17710221,885855
+0,tfxla_8_2,,0,,1,CPU-1.dram,4449546,885863
+0,tfxla_8_3,,0,,1,NVIDIA TITAN X (Pascal),15405000,873173
+0,tfxla_8_3,,0,,1,NVIDIA TITAN X (Pascal),113878000,874719
+0,tfxla_8_3,,0,,1,CPU-0.package-0,16476154,876209
+0,tfxla_8_3,,0,,1,CPU-0.dram,1941615,876299
+0,tfxla_8_3,,0,,1,CPU-1.package-1,17063493,876322
+0,tfxla_8_3,,0,,1,CPU-1.dram,3698485,876337
+0,tfxla_8_4,,0,,1,NVIDIA TITAN X (Pascal),16155000,900077
+0,tfxla_8_4,,0,,1,NVIDIA TITAN X (Pascal),87289000,901688
+0,tfxla_8_4,,0,,1,CPU-0.package-0,17260332,903979
+0,tfxla_8_4,,0,,1,CPU-0.dram,2175905,904048
+0,tfxla_8_4,,0,,1,CPU-1.package-1,17544877,904075
+0,tfxla_8_4,,0,,1,CPU-1.dram,3784471,904084
+0,tfxla_8_5,,0,,1,NVIDIA TITAN X (Pascal),16202000,900658
+0,tfxla_8_5,,0,,1,NVIDIA TITAN X (Pascal),83821000,902236
+0,tfxla_8_5,,0,,1,CPU-0.package-0,16979022,903750
+0,tfxla_8_5,,0,,1,CPU-0.dram,2030968,903827
+0,tfxla_8_5,,0,,1,CPU-1.package-1,17613846,903853
+0,tfxla_8_5,,0,,1,CPU-1.dram,3776392,903862
+0,tfxla_8_6,,0,,1,NVIDIA TITAN X (Pascal),16344000,910639
+0,tfxla_8_6,,0,,1,NVIDIA TITAN X (Pascal),84835000,912223
+0,tfxla_8_6,,0,,1,CPU-0.package-0,17065386,909681
+0,tfxla_8_6,,0,,1,CPU-0.dram,2019677,909753
+0,tfxla_8_6,,0,,1,CPU-1.package-1,17729874,909782
+0,tfxla_8_6,,0,,1,CPU-1.dram,3832451,909797
+0,tfxla_8_7,,0,,1,NVIDIA TITAN X (Pascal),16392000,918258
+0,tfxla_8_7,,0,,1,NVIDIA TITAN X (Pascal),76105000,919860
+0,tfxla_8_7,,0,,1,CPU-0.package-0,17304338,921343
+0,tfxla_8_7,,0,,1,CPU-0.dram,2002051,921424
+0,tfxla_8_7,,0,,1,CPU-1.package-1,17922195,921445
+0,tfxla_8_7,,0,,1,CPU-1.dram,3849006,921452
+0,tfxla_8_8,,0,,1,NVIDIA TITAN X (Pascal),16469000,915023
+0,tfxla_8_8,,0,,1,NVIDIA TITAN X (Pascal),75509000,916515
+0,tfxla_8_8,,0,,1,CPU-0.package-0,17182696,917979
+0,tfxla_8_8,,0,,1,CPU-0.dram,1954116,918056
+0,tfxla_8_8,,0,,1,CPU-1.package-1,17864517,918069
+0,tfxla_8_8,,0,,1,CPU-1.dram,3806410,918084
+0,tfxla_8_9,,0,,1,NVIDIA TITAN X (Pascal),16464000,917593
+0,tfxla_8_9,,0,,1,NVIDIA TITAN X (Pascal),75805000,919167
+0,tfxla_8_9,,0,,1,CPU-0.package-0,17640275,920687
+0,tfxla_8_9,,0,,1,CPU-0.dram,2159977,920763
+0,tfxla_8_9,,0,,1,CPU-1.package-1,17898147,920776
+0,tfxla_8_9,,0,,1,CPU-1.dram,3836169,920784
+0,tfxla_16_0,,0,,1,NVIDIA TITAN X (Pascal),9542000,538102
+0,tfxla_16_0,,0,,1,NVIDIA TITAN X (Pascal),85114000,538118
+0,tfxla_16_0,,0,,1,CPU-0.package-0,10309056,538142
+0,tfxla_16_0,,0,,1,CPU-0.dram,1273036,538126
+0,tfxla_16_0,,0,,1,CPU-1.package-1,10760776,538104
+0,tfxla_16_0,,0,,1,CPU-1.dram,2302237,538094
+0,tfxla_16_1,,0,,1,NVIDIA TITAN X (Pascal),9241000,510903
+0,tfxla_16_1,,0,,1,NVIDIA TITAN X (Pascal),83268000,512507
+0,tfxla_16_1,,0,,1,CPU-0.package-0,9960424,513984
+0,tfxla_16_1,,0,,1,CPU-0.dram,1424812,514089
+0,tfxla_16_1,,0,,1,CPU-1.package-1,10570163,514094
+0,tfxla_16_1,,0,,1,CPU-1.dram,2205067,514098
+0,tfxla_16_2,,0,,1,NVIDIA TITAN X (Pascal),9346000,519934
+0,tfxla_16_2,,0,,1,NVIDIA TITAN X (Pascal),83114000,521514
+0,tfxla_16_2,,0,,1,CPU-0.package-0,10084874,522983
+0,tfxla_16_2,,0,,1,CPU-0.dram,1272118,523058
+0,tfxla_16_2,,0,,1,CPU-1.package-1,10566501,523067
+0,tfxla_16_2,,0,,1,CPU-1.dram,2234673,523075
+0,tfxla_16_3,,0,,1,NVIDIA TITAN X (Pascal),9420000,523178
+0,tfxla_16_3,,0,,1,NVIDIA TITAN X (Pascal),84146000,524771
+0,tfxla_16_3,,0,,1,CPU-0.package-0,10269016,528497
+0,tfxla_16_3,,0,,1,CPU-0.dram,1256864,528586
+0,tfxla_16_3,,0,,1,CPU-1.package-1,10905612,528620
+0,tfxla_16_3,,0,,1,CPU-1.dram,2270444,528627
+0,tfxla_16_4,,0,,1,NVIDIA TITAN X (Pascal),9333000,509022
+0,tfxla_16_4,,0,,1,NVIDIA TITAN X (Pascal),82810000,510587
+0,tfxla_16_4,,0,,1,CPU-0.package-0,9882970,512065
+0,tfxla_16_4,,0,,1,CPU-0.dram,1162723,512155
+0,tfxla_16_4,,0,,1,CPU-1.package-1,10405063,512167
+0,tfxla_16_4,,0,,1,CPU-1.dram,2188833,512173
+0,tfxla_16_5,,0,,1,NVIDIA TITAN X (Pascal),9151000,512701
+0,tfxla_16_5,,0,,1,NVIDIA TITAN X (Pascal),82648000,514861
+0,tfxla_16_5,,0,,1,CPU-0.package-0,10052037,516371
+0,tfxla_16_5,,0,,1,CPU-0.dram,1274429,516404
+0,tfxla_16_5,,0,,1,CPU-1.package-1,10528232,516415
+0,tfxla_16_5,,0,,1,CPU-1.dram,2232958,516421
+0,tfxla_16_6,,0,,1,NVIDIA TITAN X (Pascal),9600000,527958
+0,tfxla_16_6,,0,,1,NVIDIA TITAN X (Pascal),83947000,529522
+0,tfxla_16_6,,0,,1,CPU-0.package-0,10525180,531532
+0,tfxla_16_6,,0,,1,CPU-0.dram,1345130,531646
+0,tfxla_16_6,,0,,1,CPU-1.package-1,10605502,531664
+0,tfxla_16_6,,0,,1,CPU-1.dram,2275110,531677
+0,tfxla_16_7,,0,,1,NVIDIA TITAN X (Pascal),9333000,519896
+0,tfxla_16_7,,0,,1,NVIDIA TITAN X (Pascal),83446000,521402
+0,tfxla_16_7,,0,,1,CPU-0.package-0,10156529,522864
+0,tfxla_16_7,,0,,1,CPU-0.dram,1255901,522959
+0,tfxla_16_7,,0,,1,CPU-1.package-1,10757969,522963
+0,tfxla_16_7,,0,,1,CPU-1.dram,2256918,522965
+0,tfxla_16_8,,0,,1,NVIDIA TITAN X (Pascal),9134000,504894
+0,tfxla_16_8,,0,,1,NVIDIA TITAN X (Pascal),82504000,506434
+0,tfxla_16_8,,0,,1,CPU-0.package-0,10143773,507910
+0,tfxla_16_8,,0,,1,CPU-0.dram,1252887,507958
+0,tfxla_16_8,,0,,1,CPU-1.package-1,10479404,507971
+0,tfxla_16_8,,0,,1,CPU-1.dram,2145581,507975
+0,tfxla_16_9,,0,,1,NVIDIA TITAN X (Pascal),9128000,510046
+0,tfxla_16_9,,0,,1,NVIDIA TITAN X (Pascal),82504000,511561
+0,tfxla_16_9,,0,,1,CPU-0.package-0,10081090,513024
+0,tfxla_16_9,,0,,1,CPU-0.dram,1286669,513095
+0,tfxla_16_9,,0,,1,CPU-1.package-1,10573825,513098
+0,tfxla_16_9,,0,,1,CPU-1.dram,2233173,513104
+0,tfxla_32_0,,0,,1,NVIDIA TITAN X (Pascal),6248000,341672
+0,tfxla_32_0,,0,,1,NVIDIA TITAN X (Pascal),66804000,341725
+0,tfxla_32_0,,0,,1,CPU-0.package-0,8476174,341345
+0,tfxla_32_0,,0,,1,CPU-0.dram,779183,341345
+0,tfxla_32_0,,0,,1,CPU-1.package-1,10239537,341340
+0,tfxla_32_0,,0,,1,CPU-1.dram,1869568,341337
+0,tfxla_32_1,,0,,1,NVIDIA TITAN X (Pascal),6120000,329687
+0,tfxla_32_1,,0,,1,NVIDIA TITAN X (Pascal),61070000,331233
+0,tfxla_32_1,,0,,1,CPU-0.package-0,8273294,332761
+0,tfxla_32_1,,0,,1,CPU-0.dram,757243,332816
+0,tfxla_32_1,,0,,1,CPU-1.package-1,10016270,332820
+0,tfxla_32_1,,0,,1,CPU-1.dram,1819537,332824
+0,tfxla_32_2,,0,,1,NVIDIA TITAN X (Pascal),5902000,330164
+0,tfxla_32_2,,0,,1,NVIDIA TITAN X (Pascal),72379000,331719
+0,tfxla_32_2,,0,,1,CPU-0.package-0,8301126,332947
+0,tfxla_32_2,,0,,1,CPU-0.dram,776521,333000
+0,tfxla_32_2,,0,,1,CPU-1.package-1,9999425,333005
+0,tfxla_32_2,,0,,1,CPU-1.dram,1829559,333009
+0,tfxla_32_3,,0,,1,NVIDIA TITAN X (Pascal),6022000,332693
+0,tfxla_32_3,,0,,1,NVIDIA TITAN X (Pascal),69314000,334280
+0,tfxla_32_3,,0,,1,CPU-0.package-0,8393228,335727
+0,tfxla_32_3,,0,,1,CPU-0.dram,801215,335777
+0,tfxla_32_3,,0,,1,CPU-1.package-1,10215672,335783
+0,tfxla_32_3,,0,,1,CPU-1.dram,1840207,335787
+0,tfxla_32_4,,0,,1,NVIDIA TITAN X (Pascal),6148000,340327
+0,tfxla_32_4,,0,,1,NVIDIA TITAN X (Pascal),62940000,341858
+0,tfxla_32_4,,0,,1,CPU-0.package-0,8522256,343313
+0,tfxla_32_4,,0,,1,CPU-0.dram,770554,343361
+0,tfxla_32_4,,0,,1,CPU-1.package-1,10231846,343367
+0,tfxla_32_4,,0,,1,CPU-1.dram,1848807,343372
+0,tfxla_32_5,,0,,1,NVIDIA TITAN X (Pascal),6067000,332214
+0,tfxla_32_5,,0,,1,NVIDIA TITAN X (Pascal),67983000,333815
+0,tfxla_32_5,,0,,1,CPU-0.package-0,8340189,335283
+0,tfxla_32_5,,0,,1,CPU-0.dram,766301,335332
+0,tfxla_32_5,,0,,1,CPU-1.package-1,10002416,335336
+0,tfxla_32_5,,0,,1,CPU-1.dram,1831778,335339
+0,tfxla_32_6,,0,,1,NVIDIA TITAN X (Pascal),6056000,335324
+0,tfxla_32_6,,0,,1,NVIDIA TITAN X (Pascal),63764000,334498
+0,tfxla_32_6,,0,,1,CPU-0.package-0,8357706,336678
+0,tfxla_32_6,,0,,1,CPU-0.dram,764847,336756
+0,tfxla_32_6,,0,,1,CPU-1.package-1,10204259,336758
+0,tfxla_32_6,,0,,1,CPU-1.dram,1848164,336762
+0,tfxla_32_7,,0,,1,NVIDIA TITAN X (Pascal),6206000,342789
+0,tfxla_32_7,,0,,1,NVIDIA TITAN X (Pascal),68493000,344329
+0,tfxla_32_7,,0,,1,CPU-0.package-0,8562783,345090
+0,tfxla_32_7,,0,,1,CPU-0.dram,778663,345139
+0,tfxla_32_7,,0,,1,CPU-1.package-1,10314793,345146
+0,tfxla_32_7,,0,,1,CPU-1.dram,1817732,345150
+0,tfxla_32_8,,0,,1,NVIDIA TITAN X (Pascal),5957000,331530
+0,tfxla_32_8,,0,,1,NVIDIA TITAN X (Pascal),68169000,333056
+0,tfxla_32_8,,0,,1,CPU-0.package-0,8303995,334642
+0,tfxla_32_8,,0,,1,CPU-0.dram,758757,334664
+0,tfxla_32_8,,0,,1,CPU-1.package-1,10040440,334668
+0,tfxla_32_8,,0,,1,CPU-1.dram,1817763,334672
+0,tfxla_32_9,,0,,1,NVIDIA TITAN X (Pascal),6005000,333562
+0,tfxla_32_9,,0,,1,NVIDIA TITAN X (Pascal),62230000,335094
+0,tfxla_32_9,,0,,1,CPU-0.package-0,8411600,339407
+0,tfxla_32_9,,0,,1,CPU-0.dram,756356,339462
+0,tfxla_32_9,,0,,1,CPU-1.package-1,10264683,339471
+0,tfxla_32_9,,0,,1,CPU-1.dram,1859471,339476
+0,tfxla_64_0,,0,,1,NVIDIA TITAN X (Pascal),10282000,579100
+0,tfxla_64_0,,0,,1,NVIDIA TITAN X (Pascal),90975000,579171
+0,tfxla_64_0,,0,,1,CPU-0.package-0,14256922,579111
+0,tfxla_64_0,,0,,1,CPU-0.dram,1178237,579119
+0,tfxla_64_0,,0,,1,CPU-1.package-1,17940811,579118
+0,tfxla_64_0,,0,,1,CPU-1.dram,3371065,579118
+0,tfxla_64_1,,0,,1,NVIDIA TITAN X (Pascal),10288000,574309
+0,tfxla_64_1,,0,,1,NVIDIA TITAN X (Pascal),90077000,575908
+0,tfxla_64_1,,0,,1,CPU-0.package-0,14178369,577385
+0,tfxla_64_1,,0,,1,CPU-0.dram,1138105,577424
+0,tfxla_64_1,,0,,1,CPU-1.package-1,17807633,577428
+0,tfxla_64_1,,0,,1,CPU-1.dram,3372043,577432
+0,tfxla_64_2,,0,,1,NVIDIA TITAN X (Pascal),10508000,578809
+0,tfxla_64_2,,0,,1,NVIDIA TITAN X (Pascal),91221000,579821
+0,tfxla_64_2,,0,,1,CPU-0.package-0,14269739,581285
+0,tfxla_64_2,,0,,1,CPU-0.dram,1167742,581333
+0,tfxla_64_2,,0,,1,CPU-1.package-1,17954727,581337
+0,tfxla_64_2,,0,,1,CPU-1.dram,3392744,581339
+0,tfxla_64_3,,0,,1,NVIDIA TITAN X (Pascal),10504000,581783
+0,tfxla_64_3,,0,,1,NVIDIA TITAN X (Pascal),90513000,583372
+0,tfxla_64_3,,0,,1,CPU-0.package-0,14387964,584858
+0,tfxla_64_3,,0,,1,CPU-0.dram,1172377,584908
+0,tfxla_64_3,,0,,1,CPU-1.package-1,18064345,584908
+0,tfxla_64_3,,0,,1,CPU-1.dram,3371156,584911
+0,tfxla_64_4,,0,,1,NVIDIA TITAN X (Pascal),10407000,580591
+0,tfxla_64_4,,0,,1,NVIDIA TITAN X (Pascal),89492000,582153
+0,tfxla_64_4,,0,,1,CPU-0.package-0,14646386,583650
+0,tfxla_64_4,,0,,1,CPU-0.dram,1327918,583695
+0,tfxla_64_4,,0,,1,CPU-1.package-1,18053787,583700
+0,tfxla_64_4,,0,,1,CPU-1.dram,3394029,583703
+0,tfxla_64_5,,0,,1,NVIDIA TITAN X (Pascal),10389000,580324
+0,tfxla_64_5,,0,,1,NVIDIA TITAN X (Pascal),90256000,581800
+0,tfxla_64_5,,0,,1,CPU-0.package-0,14338647,583253
+0,tfxla_64_5,,0,,1,CPU-0.dram,1210337,583292
+0,tfxla_64_5,,0,,1,CPU-1.package-1,18041885,583298
+0,tfxla_64_5,,0,,1,CPU-1.dram,3381698,583303
+0,tfxla_64_6,,0,,1,NVIDIA TITAN X (Pascal),10403000,579727
+0,tfxla_64_6,,0,,1,NVIDIA TITAN X (Pascal),90108000,581265
+0,tfxla_64_6,,0,,1,CPU-0.package-0,14328149,582727
+0,tfxla_64_6,,0,,1,CPU-0.dram,1150989,582779
+0,tfxla_64_6,,0,,1,CPU-1.package-1,17961685,582786
+0,tfxla_64_6,,0,,1,CPU-1.dram,3384498,582790
+0,tfxla_64_7,,0,,1,NVIDIA TITAN X (Pascal),10706000,584148
+0,tfxla_64_7,,0,,1,NVIDIA TITAN X (Pascal),91275000,597349
+0,tfxla_64_7,,0,,1,CPU-0.package-0,14644006,593682
+0,tfxla_64_7,,0,,1,CPU-0.dram,1211454,593725
+0,tfxla_64_7,,0,,1,CPU-1.package-1,18334792,593731
+0,tfxla_64_7,,0,,1,CPU-1.dram,3422074,593734
+0,tfxla_64_8,,0,,1,NVIDIA TITAN X (Pascal),10342000,579028
+0,tfxla_64_8,,0,,1,NVIDIA TITAN X (Pascal),90675000,580621
+0,tfxla_64_8,,0,,1,CPU-0.package-0,14418542,582058
+0,tfxla_64_8,,0,,1,CPU-0.dram,1232370,582113
+0,tfxla_64_8,,0,,1,CPU-1.package-1,17943009,582118
+0,tfxla_64_8,,0,,1,CPU-1.dram,3406515,582123
+0,tfxla_64_9,,0,,1,NVIDIA TITAN X (Pascal),10372000,580585
+0,tfxla_64_9,,0,,1,NVIDIA TITAN X (Pascal),91396000,582182
+0,tfxla_64_9,,0,,1,CPU-0.package-0,14375879,583662
+0,tfxla_64_9,,0,,1,CPU-0.dram,1204263,583694
+0,tfxla_64_9,,0,,1,CPU-1.package-1,18059829,583698
+0,tfxla_64_9,,0,,1,CPU-1.dram,3391368,583702
+0,tfxla_128_0,,0,,1,NVIDIA TITAN X (Pascal),10150000,569004
+0,tfxla_128_0,,0,,1,NVIDIA TITAN X (Pascal),87745000,568978
+0,tfxla_128_0,,0,,1,CPU-0.package-0,14055079,572787
+0,tfxla_128_0,,0,,1,CPU-0.dram,1082184,572783
+0,tfxla_128_0,,0,,1,CPU-1.package-1,17785111,572777
+0,tfxla_128_0,,0,,1,CPU-1.dram,3344963,572775
+0,tfxla_128_1,,0,,1,NVIDIA TITAN X (Pascal),10298000,569041
+0,tfxla_128_1,,0,,1,NVIDIA TITAN X (Pascal),80673000,568553
+0,tfxla_128_1,,0,,1,CPU-0.package-0,14288781,569710
+0,tfxla_128_1,,0,,1,CPU-0.dram,1269426,569752
+0,tfxla_128_1,,0,,1,CPU-1.package-1,17801530,569759
+0,tfxla_128_1,,0,,1,CPU-1.dram,3344381,569762
+0,tfxla_128_2,,0,,1,NVIDIA TITAN X (Pascal),9987000,552500
+0,tfxla_128_2,,0,,1,NVIDIA TITAN X (Pascal),79479000,554758
+0,tfxla_128_2,,0,,1,CPU-0.package-0,13634853,556261
+0,tfxla_128_2,,0,,1,CPU-0.dram,1049075,556302
+0,tfxla_128_2,,0,,1,CPU-1.package-1,17365067,556308
+0,tfxla_128_2,,0,,1,CPU-1.dram,3227550,556311
+0,tfxla_128_3,,0,,1,NVIDIA TITAN X (Pascal),10037000,555758
+0,tfxla_128_3,,0,,1,NVIDIA TITAN X (Pascal),82210000,557331
+0,tfxla_128_3,,0,,1,CPU-0.package-0,13746730,558771
+0,tfxla_128_3,,0,,1,CPU-0.dram,1089436,558812
+0,tfxla_128_3,,0,,1,CPU-1.package-1,17495011,558818
+0,tfxla_128_3,,0,,1,CPU-1.dram,3244564,558822
+0,tfxla_128_4,,0,,1,NVIDIA TITAN X (Pascal),10053000,552211
+0,tfxla_128_4,,0,,1,NVIDIA TITAN X (Pascal),81254000,553796
+0,tfxla_128_4,,0,,1,CPU-0.package-0,13741176,558916
+0,tfxla_128_4,,0,,1,CPU-0.dram,1058577,558963
+0,tfxla_128_4,,0,,1,CPU-1.package-1,17490922,558968
+0,tfxla_128_4,,0,,1,CPU-1.dram,3249551,558972
+0,tfxla_128_5,,0,,1,NVIDIA TITAN X (Pascal),10045000,558531
+0,tfxla_128_5,,0,,1,NVIDIA TITAN X (Pascal),77374000,558109
+0,tfxla_128_5,,0,,1,CPU-0.package-0,13749659,559888
+0,tfxla_128_5,,0,,1,CPU-0.dram,1101738,559931
+0,tfxla_128_5,,0,,1,CPU-1.package-1,17565080,559935
+0,tfxla_128_5,,0,,1,CPU-1.dram,3275531,559938
+0,tfxla_128_6,,0,,1,NVIDIA TITAN X (Pascal),10199000,565268
+0,tfxla_128_6,,0,,1,NVIDIA TITAN X (Pascal),81737000,561727
+0,tfxla_128_6,,0,,1,CPU-0.package-0,13824061,563104
+0,tfxla_128_6,,0,,1,CPU-0.dram,1075835,563127
+0,tfxla_128_6,,0,,1,CPU-1.package-1,17596879,563131
+0,tfxla_128_6,,0,,1,CPU-1.dram,3291459,563135
+0,tfxla_128_7,,0,,1,NVIDIA TITAN X (Pascal),9973000,555796
+0,tfxla_128_7,,0,,1,NVIDIA TITAN X (Pascal),82613000,559977
+0,tfxla_128_7,,0,,1,CPU-0.package-0,13776699,561566
+0,tfxla_128_7,,0,,1,CPU-0.dram,1068169,561608
+0,tfxla_128_7,,0,,1,CPU-1.package-1,17497880,561613
+0,tfxla_128_7,,0,,1,CPU-1.dram,3249322,561617
+0,tfxla_128_8,,0,,1,NVIDIA TITAN X (Pascal),9959000,554604
+0,tfxla_128_8,,0,,1,NVIDIA TITAN X (Pascal),80624000,556194
+0,tfxla_128_8,,0,,1,CPU-0.package-0,13668850,557662
+0,tfxla_128_8,,0,,1,CPU-0.dram,1064956,557707
+0,tfxla_128_8,,0,,1,CPU-1.package-1,17488175,557713
+0,tfxla_128_8,,0,,1,CPU-1.dram,3277138,557717
+0,tfxla_128_9,,0,,1,NVIDIA TITAN X (Pascal),10060000,555875
+0,tfxla_128_9,,0,,1,NVIDIA TITAN X (Pascal),80734000,558563
+0,tfxla_128_9,,0,,1,CPU-0.package-0,13777674,560006
+0,tfxla_128_9,,0,,1,CPU-0.dram,1113595,560055
+0,tfxla_128_9,,0,,1,CPU-1.package-1,17491960,560060
+0,tfxla_128_9,,0,,1,CPU-1.dram,3288490,560064
+0,tfxla_256_0,,0,,1,NVIDIA TITAN X (Pascal),9969000,545429
+0,tfxla_256_0,,0,,1,NVIDIA TITAN X (Pascal),93039000,558998
+0,tfxla_256_0,,0,,1,CPU-0.package-0,13763209,559096
+0,tfxla_256_0,,0,,1,CPU-0.dram,1088595,559085
+0,tfxla_256_0,,0,,1,CPU-1.package-1,17557877,559081
+0,tfxla_256_0,,0,,1,CPU-1.dram,3220451,559079
+0,tfxla_256_1,,0,,1,NVIDIA TITAN X (Pascal),9936000,546904
+0,tfxla_256_1,,0,,1,NVIDIA TITAN X (Pascal),78864000,548452
+0,tfxla_256_1,,0,,1,CPU-0.package-0,13411221,546640
+0,tfxla_256_1,,0,,1,CPU-0.dram,1024427,546675
+0,tfxla_256_1,,0,,1,CPU-1.package-1,17163530,546680
+0,tfxla_256_1,,0,,1,CPU-1.dram,3176143,546684
+0,tfxla_256_2,,0,,1,NVIDIA TITAN X (Pascal),10582000,589021
+0,tfxla_256_2,,0,,1,NVIDIA TITAN X (Pascal),77755000,585026
+0,tfxla_256_2,,0,,1,CPU-0.package-0,14370264,586517
+0,tfxla_256_2,,0,,1,CPU-0.dram,1104614,586588
+0,tfxla_256_2,,0,,1,CPU-1.package-1,18411269,586593
+0,tfxla_256_2,,0,,1,CPU-1.dram,3415634,586597
+0,tfxla_256_3,,0,,1,NVIDIA TITAN X (Pascal),9627000,537632
+0,tfxla_256_3,,0,,1,NVIDIA TITAN X (Pascal),83449000,539350
+0,tfxla_256_3,,0,,1,CPU-0.package-0,13294827,540834
+0,tfxla_256_3,,0,,1,CPU-0.dram,1018215,540870
+0,tfxla_256_3,,0,,1,CPU-1.package-1,17036822,540875
+0,tfxla_256_3,,0,,1,CPU-1.dram,3140187,540879
+0,tfxla_256_4,,0,,1,NVIDIA TITAN X (Pascal),9762000,539253
+0,tfxla_256_4,,0,,1,NVIDIA TITAN X (Pascal),76067000,540808
+0,tfxla_256_4,,0,,1,CPU-0.package-0,13297756,542322
+0,tfxla_256_4,,0,,1,CPU-0.dram,1058913,542375
+0,tfxla_256_4,,0,,1,CPU-1.package-1,17147722,542380
+0,tfxla_256_4,,0,,1,CPU-1.dram,3153223,542385
+0,tfxla_256_5,,0,,1,NVIDIA TITAN X (Pascal),9747000,545420
+0,tfxla_256_5,,0,,1,NVIDIA TITAN X (Pascal),76410000,546973
+0,tfxla_256_5,,0,,1,CPU-0.package-0,13519192,549534
+0,tfxla_256_5,,0,,1,CPU-0.dram,1020265,549580
+0,tfxla_256_5,,0,,1,CPU-1.package-1,17199358,549586
+0,tfxla_256_5,,0,,1,CPU-1.dram,3165049,549590
+0,tfxla_256_6,,0,,1,NVIDIA TITAN X (Pascal),9849000,546236
+0,tfxla_256_6,,0,,1,NVIDIA TITAN X (Pascal),78651000,542831
+0,tfxla_256_6,,0,,1,CPU-0.package-0,13365201,544243
+0,tfxla_256_6,,0,,1,CPU-0.dram,1056067,544236
+0,tfxla_256_6,,0,,1,CPU-1.package-1,17195146,544241
+0,tfxla_256_6,,0,,1,CPU-1.dram,3174842,544245
+0,tfxla_256_7,,0,,1,NVIDIA TITAN X (Pascal),9785000,543014
+0,tfxla_256_7,,0,,1,NVIDIA TITAN X (Pascal),81060000,544583
+0,tfxla_256_7,,0,,1,CPU-0.package-0,13702296,546078
+0,tfxla_256_7,,0,,1,CPU-0.dram,1166319,546160
+0,tfxla_256_7,,0,,1,CPU-1.package-1,17100908,546165
+0,tfxla_256_7,,0,,1,CPU-1.dram,3153422,546169
+0,tfxla_256_8,,0,,1,NVIDIA TITAN X (Pascal),9707000,541736
+0,tfxla_256_8,,0,,1,NVIDIA TITAN X (Pascal),77104000,543294
+0,tfxla_256_8,,0,,1,CPU-0.package-0,13405911,544792
+0,tfxla_256_8,,0,,1,CPU-0.dram,1075024,544838
+0,tfxla_256_8,,0,,1,CPU-1.package-1,17214372,544844
+0,tfxla_256_8,,0,,1,CPU-1.dram,3198021,544847
+0,tfxla_256_9,,0,,1,NVIDIA TITAN X (Pascal),9857000,549008
+0,tfxla_256_9,,0,,1,NVIDIA TITAN X (Pascal),78466000,551867
+0,tfxla_256_9,,0,,1,CPU-0.package-0,13451320,546949
+0,tfxla_256_9,,0,,1,CPU-0.dram,1043476,546992
+0,tfxla_256_9,,0,,1,CPU-1.package-1,17173357,546997
+0,tfxla_256_9,,0,,1,CPU-1.dram,3147180,547002
+0,tfxla_512_0,,0,,1,NVIDIA TITAN X (Pascal),9598000,541692
+0,tfxla_512_0,,0,,1,NVIDIA TITAN X (Pascal),88978000,541664
+0,tfxla_512_0,,0,,1,CPU-0.package-0,13468899,548860
+0,tfxla_512_0,,0,,1,CPU-0.dram,1002395,548857
+0,tfxla_512_0,,0,,1,CPU-1.package-1,17369768,548853
+0,tfxla_512_0,,0,,1,CPU-1.dram,3139177,548850
+0,tfxla_512_1,,0,,1,NVIDIA TITAN X (Pascal),10189000,582106
+0,tfxla_512_1,,0,,1,NVIDIA TITAN X (Pascal),78593000,570553
+0,tfxla_512_1,,0,,1,CPU-0.package-0,13995814,570016
+0,tfxla_512_1,,0,,1,CPU-0.dram,1089528,570054
+0,tfxla_512_1,,0,,1,CPU-1.package-1,18001540,570057
+0,tfxla_512_1,,0,,1,CPU-1.dram,3282080,570060
+0,tfxla_512_2,,0,,1,NVIDIA TITAN X (Pascal),9619000,534897
+0,tfxla_512_2,,0,,1,NVIDIA TITAN X (Pascal),79554000,536477
+0,tfxla_512_2,,0,,1,CPU-0.package-0,13364651,542989
+0,tfxla_512_2,,0,,1,CPU-0.dram,1001156,543030
+0,tfxla_512_2,,0,,1,CPU-1.package-1,17157060,543036
+0,tfxla_512_2,,0,,1,CPU-1.dram,3129064,543039
+0,tfxla_512_3,,0,,1,NVIDIA TITAN X (Pascal),10171000,555565
+0,tfxla_512_3,,0,,1,NVIDIA TITAN X (Pascal),67396000,551453
+0,tfxla_512_3,,0,,1,CPU-0.package-0,13941309,567485
+0,tfxla_512_3,,0,,1,CPU-0.dram,1063227,567514
+0,tfxla_512_3,,0,,1,CPU-1.package-1,18008743,567519
+0,tfxla_512_3,,0,,1,CPU-1.dram,3228254,567522
+0,tfxla_512_4,,0,,1,NVIDIA TITAN X (Pascal),9901000,551314
+0,tfxla_512_4,,0,,1,NVIDIA TITAN X (Pascal),62993000,551410
+0,tfxla_512_4,,0,,1,CPU-0.package-0,13971277,569284
+0,tfxla_512_4,,0,,1,CPU-0.dram,1045663,569313
+0,tfxla_512_4,,0,,1,CPU-1.package-1,18058975,569318
+0,tfxla_512_4,,0,,1,CPU-1.dram,3249046,569322
+0,tfxla_512_5,,0,,1,NVIDIA TITAN X (Pascal),9772000,549213
+0,tfxla_512_5,,0,,1,NVIDIA TITAN X (Pascal),66101000,547531
+0,tfxla_512_5,,0,,1,CPU-0.package-0,13788722,561048
+0,tfxla_512_5,,0,,1,CPU-0.dram,1013075,561086
+0,tfxla_512_5,,0,,1,CPU-1.package-1,17762467,561092
+0,tfxla_512_5,,0,,1,CPU-1.dram,3181114,561096
+0,tfxla_512_6,,0,,1,NVIDIA TITAN X (Pascal),10274000,558060
+0,tfxla_512_6,,0,,1,NVIDIA TITAN X (Pascal),63725000,559591
+0,tfxla_512_6,,0,,1,CPU-0.package-0,13724391,557232
+0,tfxla_512_6,,0,,1,CPU-0.dram,1062096,557254
+0,tfxla_512_6,,0,,1,CPU-1.package-1,17673600,557261
+0,tfxla_512_6,,0,,1,CPU-1.dram,3178773,557265
+0,tfxla_512_7,,0,,1,NVIDIA TITAN X (Pascal),10052000,553908
+0,tfxla_512_7,,0,,1,NVIDIA TITAN X (Pascal),76572000,544225
+0,tfxla_512_7,,0,,1,CPU-0.package-0,13775783,546648
+0,tfxla_512_7,,0,,1,CPU-0.dram,1159128,546656
+0,tfxla_512_7,,0,,1,CPU-1.package-1,17264421,546658
+0,tfxla_512_7,,0,,1,CPU-1.dram,3129324,546660
+0,tfxla_512_8,,0,,1,NVIDIA TITAN X (Pascal),9718000,534021
+0,tfxla_512_8,,0,,1,NVIDIA TITAN X (Pascal),83720000,532869
+0,tfxla_512_8,,0,,1,CPU-0.package-0,13280056,540354
+0,tfxla_512_8,,0,,1,CPU-0.dram,1035993,540377
+0,tfxla_512_8,,0,,1,CPU-1.package-1,17104143,540382
+0,tfxla_512_8,,0,,1,CPU-1.dram,3131328,540385
+0,tfxla_512_9,,0,,1,NVIDIA TITAN X (Pascal),9836000,541046
+0,tfxla_512_9,,0,,1,NVIDIA TITAN X (Pascal),73611000,539932
+0,tfxla_512_9,,0,,1,CPU-0.package-0,13586880,541399
+0,tfxla_512_9,,0,,1,CPU-0.dram,1047331,541429
+0,tfxla_512_9,,0,,1,CPU-1.package-1,17065630,541432
+0,tfxla_512_9,,0,,1,CPU-1.dram,3108379,541435
+0,kerasxla_8_0,,0,,1,NVIDIA TITAN X (Pascal),16117000,905230
+0,kerasxla_8_0,,0,,1,NVIDIA TITAN X (Pascal),94939000,905202
+0,kerasxla_8_0,,0,,1,CPU-0.package-0,17177508,902067
+0,kerasxla_8_0,,0,,1,CPU-0.dram,2221713,902074
+0,kerasxla_8_0,,0,,1,CPU-1.package-1,17803421,902056
+0,kerasxla_8_0,,0,,1,CPU-1.dram,3694873,902057
+0,kerasxla_8_1,,0,,1,NVIDIA TITAN X (Pascal),15952000,895017
+0,kerasxla_8_1,,0,,1,NVIDIA TITAN X (Pascal),94741000,896644
+0,kerasxla_8_1,,0,,1,CPU-0.package-0,17009417,900473
+0,kerasxla_8_1,,0,,1,CPU-0.dram,2011109,900551
+0,kerasxla_8_1,,0,,1,CPU-1.package-1,17631181,900561
+0,kerasxla_8_1,,0,,1,CPU-1.dram,3711581,900567
+0,kerasxla_8_2,,0,,1,NVIDIA TITAN X (Pascal),16490000,921112
+0,kerasxla_8_2,,0,,1,NVIDIA TITAN X (Pascal),96814000,922686
+0,kerasxla_8_2,,0,,1,CPU-0.package-0,17405900,924275
+0,kerasxla_8_2,,0,,1,CPU-0.dram,2064123,924345
+0,kerasxla_8_2,,0,,1,CPU-1.package-1,18083206,924350
+0,kerasxla_8_2,,0,,1,CPU-1.dram,3787469,924358
+0,kerasxla_8_3,,0,,1,NVIDIA TITAN X (Pascal),15861000,898502
+0,kerasxla_8_3,,0,,1,NVIDIA TITAN X (Pascal),94772000,897434
+0,kerasxla_8_3,,0,,1,CPU-0.package-0,16955645,896874
+0,kerasxla_8_3,,0,,1,CPU-0.dram,2021864,896941
+0,kerasxla_8_3,,0,,1,CPU-1.package-1,17590287,896950
+0,kerasxla_8_3,,0,,1,CPU-1.dram,3667991,896957
+0,kerasxla_8_4,,0,,1,NVIDIA TITAN X (Pascal),16364000,898281
+0,kerasxla_8_4,,0,,1,NVIDIA TITAN X (Pascal),94897000,899861
+0,kerasxla_8_4,,0,,1,CPU-0.package-0,17006487,900343
+0,kerasxla_8_4,,0,,1,CPU-0.dram,2049068,900424
+0,kerasxla_8_4,,0,,1,CPU-1.package-1,17562211,900443
+0,kerasxla_8_4,,0,,1,CPU-1.dram,3678748,900449
+0,kerasxla_8_5,,0,,1,NVIDIA TITAN X (Pascal),15912000,893330
+0,kerasxla_8_5,,0,,1,NVIDIA TITAN X (Pascal),94561000,894897
+0,kerasxla_8_5,,0,,1,CPU-0.package-0,17310380,896411
+0,kerasxla_8_5,,0,,1,CPU-0.dram,2208111,896484
+0,kerasxla_8_5,,0,,1,CPU-1.package-1,17562455,896495
+0,kerasxla_8_5,,0,,1,CPU-1.dram,3731012,896503
+0,kerasxla_8_6,,0,,1,NVIDIA TITAN X (Pascal),16093000,900661
+0,kerasxla_8_6,,0,,1,NVIDIA TITAN X (Pascal),94613000,902245
+0,kerasxla_8_6,,0,,1,CPU-0.package-0,16956866,900764
+0,kerasxla_8_6,,0,,1,CPU-0.dram,2057927,900838
+0,kerasxla_8_6,,0,,1,CPU-1.package-1,17608171,900868
+0,kerasxla_8_6,,0,,1,CPU-1.dram,3743267,900877
+0,kerasxla_8_7,,0,,1,NVIDIA TITAN X (Pascal),16045000,895652
+0,kerasxla_8_7,,0,,1,NVIDIA TITAN X (Pascal),94592000,897229
+0,kerasxla_8_7,,0,,1,CPU-0.package-0,17109392,900986
+0,kerasxla_8_7,,0,,1,CPU-0.dram,2058600,901065
+0,kerasxla_8_7,,0,,1,CPU-1.package-1,17793839,901086
+0,kerasxla_8_7,,0,,1,CPU-1.dram,3723148,901095
+0,kerasxla_8_8,,0,,1,NVIDIA TITAN X (Pascal),15900000,891780
+0,kerasxla_8_8,,0,,1,NVIDIA TITAN X (Pascal),94459000,893388
+0,kerasxla_8_8,,0,,1,CPU-0.package-0,16945147,894891
+0,kerasxla_8_8,,0,,1,CPU-0.dram,2033477,894965
+0,kerasxla_8_8,,0,,1,CPU-1.package-1,17557328,894976
+0,kerasxla_8_8,,0,,1,CPU-1.dram,3676896,894982
+0,kerasxla_8_9,,0,,1,NVIDIA TITAN X (Pascal),16334000,898197
+0,kerasxla_8_9,,0,,1,NVIDIA TITAN X (Pascal),94427000,899801
+0,kerasxla_8_9,,0,,1,CPU-0.package-0,16975054,896837
+0,kerasxla_8_9,,0,,1,CPU-0.dram,2024832,896920
+0,kerasxla_8_9,,0,,1,CPU-1.package-1,17598954,896942
+0,kerasxla_8_9,,0,,1,CPU-1.dram,3675305,896949
+0,kerasxla_16_0,,0,,1,NVIDIA TITAN X (Pascal),9939000,557219
+0,kerasxla_16_0,,0,,1,NVIDIA TITAN X (Pascal),94678000,557198
+0,kerasxla_16_0,,0,,1,CPU-0.package-0,10489781,559504
+0,kerasxla_16_0,,0,,1,CPU-0.dram,1323833,559473
+0,kerasxla_16_0,,0,,1,CPU-1.package-1,11415804,559468
+0,kerasxla_16_0,,0,,1,CPU-1.dram,2500127,559469
+0,kerasxla_16_1,,0,,1,NVIDIA TITAN X (Pascal),9799000,533707
+0,kerasxla_16_1,,0,,1,NVIDIA TITAN X (Pascal),92664000,535267
+0,kerasxla_16_1,,0,,1,CPU-0.package-0,10165684,539974
+0,kerasxla_16_1,,0,,1,CPU-0.dram,1267804,540022
+0,kerasxla_16_1,,0,,1,CPU-1.package-1,10934115,540032
+0,kerasxla_16_1,,0,,1,CPU-1.dram,2280068,540043
+0,kerasxla_16_2,,0,,1,NVIDIA TITAN X (Pascal),9388000,518467
+0,kerasxla_16_2,,0,,1,NVIDIA TITAN X (Pascal),90280000,520014
+0,kerasxla_16_2,,0,,1,CPU-0.package-0,10185216,521478
+0,kerasxla_16_2,,0,,1,CPU-0.dram,1151172,521535
+0,kerasxla_16_2,,0,,1,CPU-1.package-1,10717136,521542
+0,kerasxla_16_2,,0,,1,CPU-1.dram,2239293,521544
+0,kerasxla_16_3,,0,,1,NVIDIA TITAN X (Pascal),9380000,515797
+0,kerasxla_16_3,,0,,1,NVIDIA TITAN X (Pascal),90145000,517361
+0,kerasxla_16_3,,0,,1,CPU-0.package-0,9938391,518813
+0,kerasxla_16_3,,0,,1,CPU-0.dram,1143093,518881
+0,kerasxla_16_3,,0,,1,CPU-1.package-1,10414341,518892
+0,kerasxla_16_3,,0,,1,CPU-1.dram,2211722,518937
+0,kerasxla_16_4,,0,,1,NVIDIA TITAN X (Pascal),9295000,512885
+0,kerasxla_16_4,,0,,1,NVIDIA TITAN X (Pascal),90536000,514480
+0,kerasxla_16_4,,0,,1,CPU-0.package-0,10468662,519553
+0,kerasxla_16_4,,0,,1,CPU-0.dram,1285460,519617
+0,kerasxla_16_4,,0,,1,CPU-1.package-1,10732212,519619
+0,kerasxla_16_4,,0,,1,CPU-1.dram,2206765,519651
+0,kerasxla_16_5,,0,,1,NVIDIA TITAN X (Pascal),9334000,512316
+0,kerasxla_16_5,,0,,1,NVIDIA TITAN X (Pascal),90314000,513909
+0,kerasxla_16_5,,0,,1,CPU-0.package-0,9845190,515422
+0,kerasxla_16_5,,0,,1,CPU-0.dram,1163626,515494
+0,kerasxla_16_5,,0,,1,CPU-1.package-1,10289280,515509
+0,kerasxla_16_5,,0,,1,CPU-1.dram,2199926,515536
+0,kerasxla_16_6,,0,,1,NVIDIA TITAN X (Pascal),9257000,514333
+0,kerasxla_16_6,,0,,1,NVIDIA TITAN X (Pascal),89956000,515885
+0,kerasxla_16_6,,0,,1,CPU-0.package-0,9886572,513037
+0,kerasxla_16_6,,0,,1,CPU-0.dram,1161959,513118
+0,kerasxla_16_6,,0,,1,CPU-1.package-1,10473911,513127
+0,kerasxla_16_6,,0,,1,CPU-1.dram,2213925,513123
+0,kerasxla_16_7,,0,,1,NVIDIA TITAN X (Pascal),9007000,505570
+0,kerasxla_16_7,,0,,1,NVIDIA TITAN X (Pascal),89101000,507085
+0,kerasxla_16_7,,0,,1,CPU-0.package-0,9901830,508578
+0,kerasxla_16_7,,0,,1,CPU-0.dram,1111377,508646
+0,kerasxla_16_7,,0,,1,CPU-1.package-1,10383519,508654
+0,kerasxla_16_7,,0,,1,CPU-1.dram,2146269,508700
+0,kerasxla_16_8,,0,,1,NVIDIA TITAN X (Pascal),9197000,511985
+0,kerasxla_16_8,,0,,1,NVIDIA TITAN X (Pascal),90628000,513562
+0,kerasxla_16_8,,0,,1,CPU-0.package-0,9860022,518572
+0,kerasxla_16_8,,0,,1,CPU-0.dram,1133348,518672
+0,kerasxla_16_8,,0,,1,CPU-1.package-1,10471287,518717
+0,kerasxla_16_8,,0,,1,CPU-1.dram,2186386,518724
+0,kerasxla_16_9,,0,,1,NVIDIA TITAN X (Pascal),9253000,510073
+0,kerasxla_16_9,,0,,1,NVIDIA TITAN X (Pascal),90168000,511618
+0,kerasxla_16_9,,0,,1,CPU-0.package-0,9726904,513110
+0,kerasxla_16_9,,0,,1,CPU-0.dram,1103160,513180
+0,kerasxla_16_9,,0,,1,CPU-1.package-1,10205175,513191
+0,kerasxla_16_9,,0,,1,CPU-1.dram,2164368,513223
+0,kerasxla_32_0,,0,,1,NVIDIA TITAN X (Pascal),7270000,405923
+0,kerasxla_32_0,,0,,1,NVIDIA TITAN X (Pascal),79260000,405878
+0,kerasxla_32_0,,0,,1,CPU-0.package-0,7961772,405902
+0,kerasxla_32_0,,0,,1,CPU-0.dram,962615,405870
+0,kerasxla_32_0,,0,,1,CPU-1.package-1,9105568,405831
+0,kerasxla_32_0,,0,,1,CPU-1.dram,1901453,405815
+0,kerasxla_32_1,,0,,1,NVIDIA TITAN X (Pascal),7065000,386835
+0,kerasxla_32_1,,0,,1,NVIDIA TITAN X (Pascal),76733000,386402
+0,kerasxla_32_1,,0,,1,CPU-0.package-0,7764323,387865
+0,kerasxla_32_1,,0,,1,CPU-0.dram,877868,387912
+0,kerasxla_32_1,,0,,1,CPU-1.package-1,8916297,387916
+0,kerasxla_32_1,,0,,1,CPU-1.dram,1772781,387921
+0,kerasxla_32_2,,0,,1,NVIDIA TITAN X (Pascal),6686000,369453
+0,kerasxla_32_2,,0,,1,NVIDIA TITAN X (Pascal),76786000,371904
+0,kerasxla_32_2,,0,,1,CPU-0.package-0,7946208,373402
+0,kerasxla_32_2,,0,,1,CPU-0.dram,850848,373456
+0,kerasxla_32_2,,0,,1,CPU-1.package-1,9233557,373461
+0,kerasxla_32_2,,0,,1,CPU-1.dram,1747657,373465
+0,kerasxla_32_3,,0,,1,NVIDIA TITAN X (Pascal),6700000,367876
+0,kerasxla_32_3,,0,,1,NVIDIA TITAN X (Pascal),74593000,369454
+0,kerasxla_32_3,,0,,1,CPU-0.package-0,8004618,370946
+0,kerasxla_32_3,,0,,1,CPU-0.dram,878190,371004
+0,kerasxla_32_3,,0,,1,CPU-1.package-1,9288795,371008
+0,kerasxla_32_3,,0,,1,CPU-1.dram,1724157,371013
+0,kerasxla_32_4,,0,,1,NVIDIA TITAN X (Pascal),6725000,371104
+0,kerasxla_32_4,,0,,1,NVIDIA TITAN X (Pascal),74132000,372703
+0,kerasxla_32_4,,0,,1,CPU-0.package-0,7967692,369743
+0,kerasxla_32_4,,0,,1,CPU-0.dram,844376,369798
+0,kerasxla_32_4,,0,,1,CPU-1.package-1,9135597,369804
+0,kerasxla_32_4,,0,,1,CPU-1.dram,1712866,369809
+0,kerasxla_32_5,,0,,1,NVIDIA TITAN X (Pascal),6265000,355724
+0,kerasxla_32_5,,0,,1,NVIDIA TITAN X (Pascal),75936000,357199
+0,kerasxla_32_5,,0,,1,CPU-0.package-0,8703286,358641
+0,kerasxla_32_5,,0,,1,CPU-0.dram,822039,358675
+0,kerasxla_32_5,,0,,1,CPU-1.package-1,10085302,358679
+0,kerasxla_32_5,,0,,1,CPU-1.dram,1960497,358683
+0,kerasxla_32_6,,0,,1,NVIDIA TITAN X (Pascal),6526000,357157
+0,kerasxla_32_6,,0,,1,NVIDIA TITAN X (Pascal),75690000,358948
+0,kerasxla_32_6,,0,,1,CPU-0.package-0,8860634,360408
+0,kerasxla_32_6,,0,,1,CPU-0.dram,839404,360460
+0,kerasxla_32_6,,0,,1,CPU-1.package-1,10224034,360466
+0,kerasxla_32_6,,0,,1,CPU-1.dram,1992182,360471
+0,kerasxla_32_7,,0,,1,NVIDIA TITAN X (Pascal),6459000,357862
+0,kerasxla_32_7,,0,,1,NVIDIA TITAN X (Pascal),75221000,359441
+0,kerasxla_32_7,,0,,1,CPU-0.package-0,9136085,360901
+0,kerasxla_32_7,,0,,1,CPU-0.dram,916317,360952
+0,kerasxla_32_7,,0,,1,CPU-1.package-1,10132603,360959
+0,kerasxla_32_7,,0,,1,CPU-1.dram,1975888,360963
+0,kerasxla_32_8,,0,,1,NVIDIA TITAN X (Pascal),6401000,355429
+0,kerasxla_32_8,,0,,1,NVIDIA TITAN X (Pascal),75300000,356950
+0,kerasxla_32_8,,0,,1,CPU-0.package-0,8865456,358453
+0,kerasxla_32_8,,0,,1,CPU-0.dram,856280,358493
+0,kerasxla_32_8,,0,,1,CPU-1.package-1,10245335,358500
+0,kerasxla_32_8,,0,,1,CPU-1.dram,1983630,358505
+0,kerasxla_32_9,,0,,1,NVIDIA TITAN X (Pascal),6459000,356220
+0,kerasxla_32_9,,0,,1,NVIDIA TITAN X (Pascal),75795000,357780
+0,kerasxla_32_9,,0,,1,CPU-0.package-0,8820168,359262
+0,kerasxla_32_9,,0,,1,CPU-0.dram,830927,359318
+0,kerasxla_32_9,,0,,1,CPU-1.package-1,10187413,359325
+0,kerasxla_32_9,,0,,1,CPU-1.dram,1956518,359330
+0,kerasxla_64_0,,0,,1,NVIDIA TITAN X (Pascal),10457000,586322
+0,kerasxla_64_0,,0,,1,NVIDIA TITAN X (Pascal),95726000,588540
+0,kerasxla_64_0,,0,,1,CPU-0.package-0,14452416,588447
+0,kerasxla_64_0,,0,,1,CPU-0.dram,1156849,588451
+0,kerasxla_64_0,,0,,1,CPU-1.package-1,18298415,588450
+0,kerasxla_64_0,,0,,1,CPU-1.dram,3431132,588447
+0,kerasxla_64_1,,0,,1,NVIDIA TITAN X (Pascal),10433000,584012
+0,kerasxla_64_1,,0,,1,NVIDIA TITAN X (Pascal),95532000,585551
+0,kerasxla_64_1,,0,,1,CPU-0.package-0,14416589,587047
+0,kerasxla_64_1,,0,,1,CPU-0.dram,1153590,587089
+0,kerasxla_64_1,,0,,1,CPU-1.package-1,18136001,587094
+0,kerasxla_64_1,,0,,1,CPU-1.dram,3399109,587098
+0,kerasxla_64_2,,0,,1,NVIDIA TITAN X (Pascal),10394000,579827
+0,kerasxla_64_2,,0,,1,NVIDIA TITAN X (Pascal),96328000,581371
+0,kerasxla_64_2,,0,,1,CPU-0.package-0,14296350,582856
+0,kerasxla_64_2,,0,,1,CPU-0.dram,1141732,582909
+0,kerasxla_64_2,,0,,1,CPU-1.package-1,18108535,582914
+0,kerasxla_64_2,,0,,1,CPU-1.dram,3410523,582918
+0,kerasxla_64_3,,0,,1,NVIDIA TITAN X (Pascal),10553000,584731
+0,kerasxla_64_3,,0,,1,NVIDIA TITAN X (Pascal),96829000,586293
+0,kerasxla_64_3,,0,,1,CPU-0.package-0,14519311,591404
+0,kerasxla_64_3,,0,,1,CPU-0.dram,1130532,591448
+0,kerasxla_64_3,,0,,1,CPU-1.package-1,18295425,591453
+0,kerasxla_64_3,,0,,1,CPU-1.dram,3431453,591460
+0,kerasxla_64_4,,0,,1,NVIDIA TITAN X (Pascal),10696000,586033
+0,kerasxla_64_4,,0,,1,NVIDIA TITAN X (Pascal),92322000,585518
+0,kerasxla_64_4,,0,,1,CPU-0.package-0,14482995,587036
+0,kerasxla_64_4,,0,,1,CPU-0.dram,1181848,587046
+0,kerasxla_64_4,,0,,1,CPU-1.package-1,18241164,587051
+0,kerasxla_64_4,,0,,1,CPU-1.dram,3399966,587056
+0,kerasxla_64_5,,0,,1,NVIDIA TITAN X (Pascal),10442000,578126
+0,kerasxla_64_5,,0,,1,NVIDIA TITAN X (Pascal),90014000,579694
+0,kerasxla_64_5,,0,,1,CPU-0.package-0,14257105,581178
+0,kerasxla_64_5,,0,,1,CPU-0.dram,1140125,581257
+0,kerasxla_64_5,,0,,1,CPU-1.package-1,18005508,581263
+0,kerasxla_64_5,,0,,1,CPU-1.dram,3377322,581266
+0,kerasxla_64_6,,0,,1,NVIDIA TITAN X (Pascal),10439000,577530
+0,kerasxla_64_6,,0,,1,NVIDIA TITAN X (Pascal),93110000,582350
+0,kerasxla_64_6,,0,,1,CPU-0.package-0,14651634,583799
+0,kerasxla_64_6,,0,,1,CPU-0.dram,1289667,583849
+0,kerasxla_64_6,,0,,1,CPU-1.package-1,18165054,583852
+0,kerasxla_64_6,,0,,1,CPU-1.dram,3411900,583856
+0,kerasxla_64_7,,0,,1,NVIDIA TITAN X (Pascal),10633000,592554
+0,kerasxla_64_7,,0,,1,NVIDIA TITAN X (Pascal),81541000,594020
+0,kerasxla_64_7,,0,,1,CPU-0.package-0,14674829,596769
+0,kerasxla_64_7,,0,,1,CPU-0.dram,1203850,596820
+0,kerasxla_64_7,,0,,1,CPU-1.package-1,18650526,596825
+0,kerasxla_64_7,,0,,1,CPU-1.dram,3494015,596849
+0,kerasxla_64_8,,0,,1,NVIDIA TITAN X (Pascal),10833000,589417
+0,kerasxla_64_8,,0,,1,NVIDIA TITAN X (Pascal),82844000,588165
+0,kerasxla_64_8,,0,,1,CPU-0.package-0,14674951,598174
+0,kerasxla_64_8,,0,,1,CPU-0.dram,1133868,598215
+0,kerasxla_64_8,,0,,1,CPU-1.package-1,18556715,598221
+0,kerasxla_64_8,,0,,1,CPU-1.dram,3456224,598228
+0,kerasxla_64_9,,0,,1,NVIDIA TITAN X (Pascal),10674000,584980
+0,kerasxla_64_9,,0,,1,NVIDIA TITAN X (Pascal),87971000,583659
+0,kerasxla_64_9,,0,,1,CPU-0.package-0,14394250,585093
+0,kerasxla_64_9,,0,,1,CPU-0.dram,1152243,585135
+0,kerasxla_64_9,,0,,1,CPU-1.package-1,18306899,585141
+0,kerasxla_64_9,,0,,1,CPU-1.dram,3424920,585145
+0,kerasxla_128_0,,0,,1,NVIDIA TITAN X (Pascal),10205000,569346
+0,kerasxla_128_0,,0,,1,NVIDIA TITAN X (Pascal),75688000,569251
+0,kerasxla_128_0,,0,,1,CPU-0.package-0,14117396,575143
+0,kerasxla_128_0,,0,,1,CPU-0.dram,1087891,575132
+0,kerasxla_128_0,,0,,1,CPU-1.package-1,18184280,575132
+0,kerasxla_128_0,,0,,1,CPU-1.dram,3324522,575135
+0,kerasxla_128_1,,0,,1,NVIDIA TITAN X (Pascal),10735000,591083
+0,kerasxla_128_1,,0,,1,NVIDIA TITAN X (Pascal),63790000,590304
+0,kerasxla_128_1,,0,,1,CPU-0.package-0,14692529,584315
+0,kerasxla_128_1,,0,,1,CPU-0.dram,1303713,584359
+0,kerasxla_128_1,,0,,1,CPU-1.package-1,18322035,584364
+0,kerasxla_128_1,,0,,1,CPU-1.dram,3426236,584368
+0,kerasxla_128_2,,0,,1,NVIDIA TITAN X (Pascal),10751000,589211
+0,kerasxla_128_2,,0,,1,NVIDIA TITAN X (Pascal),73097000,588282
+0,kerasxla_128_2,,0,,1,CPU-0.package-0,14504663,590411
+0,kerasxla_128_2,,0,,1,CPU-0.dram,1139070,590451
+0,kerasxla_128_2,,0,,1,CPU-1.package-1,18511611,590457
+0,kerasxla_128_2,,0,,1,CPU-1.dram,3400043,590461
+0,kerasxla_128_3,,0,,1,NVIDIA TITAN X (Pascal),10201000,583923
+0,kerasxla_128_3,,0,,1,NVIDIA TITAN X (Pascal),80401000,569791
+0,kerasxla_128_3,,0,,1,CPU-0.package-0,13912684,567098
+0,kerasxla_128_3,,0,,1,CPU-0.dram,1072163,567136
+0,kerasxla_128_3,,0,,1,CPU-1.package-1,17647538,567137
+0,kerasxla_128_3,,0,,1,CPU-1.dram,3263903,567135
+0,kerasxla_128_4,,0,,1,NVIDIA TITAN X (Pascal),10065000,556766
+0,kerasxla_128_4,,0,,1,NVIDIA TITAN X (Pascal),83356000,558311
+0,kerasxla_128_4,,0,,1,CPU-0.package-0,13925990,566248
+0,kerasxla_128_4,,0,,1,CPU-0.dram,1105409,566294
+0,kerasxla_128_4,,0,,1,CPU-1.package-1,17821915,566299
+0,kerasxla_128_4,,0,,1,CPU-1.dram,3265326,566311
+0,kerasxla_128_5,,0,,1,NVIDIA TITAN X (Pascal),10725000,585860
+0,kerasxla_128_5,,0,,1,NVIDIA TITAN X (Pascal),77242000,576381
+0,kerasxla_128_5,,0,,1,CPU-0.package-0,14053187,571888
+0,kerasxla_128_5,,0,,1,CPU-0.dram,1083163,571924
+0,kerasxla_128_5,,0,,1,CPU-1.package-1,17861404,571927
+0,kerasxla_128_5,,0,,1,CPU-1.dram,3275561,571930
+0,kerasxla_128_6,,0,,1,NVIDIA TITAN X (Pascal),10068000,557139
+0,kerasxla_128_6,,0,,1,NVIDIA TITAN X (Pascal),82225000,555927
+0,kerasxla_128_6,,0,,1,CPU-0.package-0,13743678,558895
+0,kerasxla_128_6,,0,,1,CPU-0.dram,1090155,558933
+0,kerasxla_128_6,,0,,1,CPU-1.package-1,17637650,558936
+0,kerasxla_128_6,,0,,1,CPU-1.dram,3241872,558944
+0,kerasxla_128_7,,0,,1,NVIDIA TITAN X (Pascal),10092000,557066
+0,kerasxla_128_7,,0,,1,NVIDIA TITAN X (Pascal),81667000,555884
+0,kerasxla_128_7,,0,,1,CPU-0.package-0,13680690,557426
+0,kerasxla_128_7,,0,,1,CPU-0.dram,1055899,557466
+0,kerasxla_128_7,,0,,1,CPU-1.package-1,17516434,557471
+0,kerasxla_128_7,,0,,1,CPU-1.dram,3216090,557478
+0,kerasxla_128_8,,0,,1,NVIDIA TITAN X (Pascal),10373000,576155
+0,kerasxla_128_8,,0,,1,NVIDIA TITAN X (Pascal),73336000,575000
+0,kerasxla_128_8,,0,,1,CPU-0.package-0,13933131,567529
+0,kerasxla_128_8,,0,,1,CPU-0.dram,1082949,567572
+0,kerasxla_128_8,,0,,1,CPU-1.package-1,17895889,567577
+0,kerasxla_128_8,,0,,1,CPU-1.dram,3290096,567581
+0,kerasxla_128_9,,0,,1,NVIDIA TITAN X (Pascal),10135000,587281
+0,kerasxla_128_9,,0,,1,NVIDIA TITAN X (Pascal),80010000,576689
+0,kerasxla_128_9,,0,,1,CPU-0.package-0,14317041,571417
+0,kerasxla_128_9,,0,,1,CPU-0.dram,1213795,571436
+0,kerasxla_128_9,,0,,1,CPU-1.package-1,17872391,571439
+0,kerasxla_128_9,,0,,1,CPU-1.dram,3313170,571442
+0,kerasxla_256_0,,0,,1,NVIDIA TITAN X (Pascal),9679000,546897
+0,kerasxla_256_0,,0,,1,NVIDIA TITAN X (Pascal),93102000,543799
+0,kerasxla_256_0,,0,,1,CPU-0.package-0,13381802,544189
+0,kerasxla_256_0,,0,,1,CPU-0.dram,1005118,544210
+0,kerasxla_256_0,,0,,1,CPU-1.package-1,17182939,544213
+0,kerasxla_256_0,,0,,1,CPU-1.dram,3156696,544217
+0,kerasxla_256_1,,0,,1,NVIDIA TITAN X (Pascal),10027000,550614
+0,kerasxla_256_1,,0,,1,NVIDIA TITAN X (Pascal),74270000,546100
+0,kerasxla_256_1,,0,,1,CPU-0.package-0,13450466,547556
+0,kerasxla_256_1,,0,,1,CPU-0.dram,1034739,547572
+0,kerasxla_256_1,,0,,1,CPU-1.package-1,17360795,547576
+0,kerasxla_256_1,,0,,1,CPU-1.dram,3179615,547580
+0,kerasxla_256_2,,0,,1,NVIDIA TITAN X (Pascal),9800000,540713
+0,kerasxla_256_2,,0,,1,NVIDIA TITAN X (Pascal),77168000,542278
+0,kerasxla_256_2,,0,,1,CPU-0.package-0,13380703,543784
+0,kerasxla_256_2,,0,,1,CPU-0.dram,1012982,543829
+0,kerasxla_256_2,,0,,1,CPU-1.package-1,17218401,543835
+0,kerasxla_256_2,,0,,1,CPU-1.dram,3161286,543839
+0,kerasxla_256_3,,0,,1,NVIDIA TITAN X (Pascal),10046000,553848
+0,kerasxla_256_3,,0,,1,NVIDIA TITAN X (Pascal),81042000,555514
+0,kerasxla_256_3,,0,,1,CPU-0.package-0,13520962,550070
+0,kerasxla_256_3,,0,,1,CPU-0.dram,1039972,550111
+0,kerasxla_256_3,,0,,1,CPU-1.package-1,17462846,550115
+0,kerasxla_256_3,,0,,1,CPU-1.dram,3214423,550136
+0,kerasxla_256_4,,0,,1,NVIDIA TITAN X (Pascal),9910000,550996
+0,kerasxla_256_4,,0,,1,NVIDIA TITAN X (Pascal),72418000,553288
+0,kerasxla_256_4,,0,,1,CPU-0.package-0,13598415,554730
+0,kerasxla_256_4,,0,,1,CPU-0.dram,1039864,554761
+0,kerasxla_256_4,,0,,1,CPU-1.package-1,17527543,554767
+0,kerasxla_256_4,,0,,1,CPU-1.dram,3200301,554773
+0,kerasxla_256_5,,0,,1,NVIDIA TITAN X (Pascal),10032000,555952
+0,kerasxla_256_5,,0,,1,NVIDIA TITAN X (Pascal),74898000,557425
+0,kerasxla_256_5,,0,,1,CPU-0.package-0,13570949,550331
+0,kerasxla_256_5,,0,,1,CPU-0.dram,1079339,550349
+0,kerasxla_256_5,,0,,1,CPU-1.package-1,17391130,550349
+0,kerasxla_256_5,,0,,1,CPU-1.dram,3211914,550347
+0,kerasxla_256_6,,0,,1,NVIDIA TITAN X (Pascal),9763000,544985
+0,kerasxla_256_6,,0,,1,NVIDIA TITAN X (Pascal),72878000,546450
+0,kerasxla_256_6,,0,,1,CPU-0.package-0,13709743,547929
+0,kerasxla_256_6,,0,,1,CPU-0.dram,1140263,547964
+0,kerasxla_256_6,,0,,1,CPU-1.package-1,17360063,547970
+0,kerasxla_256_6,,0,,1,CPU-1.dram,3184435,547968
+0,kerasxla_256_7,,0,,1,NVIDIA TITAN X (Pascal),9815000,541292
+0,kerasxla_256_7,,0,,1,NVIDIA TITAN X (Pascal),82281000,544983
+0,kerasxla_256_7,,0,,1,CPU-0.package-0,13453823,546692
+0,kerasxla_256_7,,0,,1,CPU-0.dram,1027426,546739
+0,kerasxla_256_7,,0,,1,CPU-1.package-1,17233965,546743
+0,kerasxla_256_7,,0,,1,CPU-1.dram,3197853,546756
+0,kerasxla_256_8,,0,,1,NVIDIA TITAN X (Pascal),9947000,553553
+0,kerasxla_256_8,,0,,1,NVIDIA TITAN X (Pascal),71356000,556014
+0,kerasxla_256_8,,0,,1,CPU-0.package-0,13575283,551000
+0,kerasxla_256_8,,0,,1,CPU-0.dram,1058469,551043
+0,kerasxla_256_8,,0,,1,CPU-1.package-1,17488358,551050
+0,kerasxla_256_8,,0,,1,CPU-1.dram,3208762,551044
+0,kerasxla_256_9,,0,,1,NVIDIA TITAN X (Pascal),9760000,542206
+0,kerasxla_256_9,,0,,1,NVIDIA TITAN X (Pascal),78649000,543752
+0,kerasxla_256_9,,0,,1,CPU-0.package-0,13392971,545337
+0,kerasxla_256_9,,0,,1,CPU-0.dram,994699,545384
+0,kerasxla_256_9,,0,,1,CPU-1.package-1,17194048,545388
+0,kerasxla_256_9,,0,,1,CPU-1.dram,3177519,545404
+0,kerasxla_512_0,,0,,1,NVIDIA TITAN X (Pascal),9924000,555754
+0,kerasxla_512_0,,0,,1,NVIDIA TITAN X (Pascal),81721000,555770
+0,kerasxla_512_0,,0,,1,CPU-0.package-0,13897426,566404
+0,kerasxla_512_0,,0,,1,CPU-0.dram,1013303,566392
+0,kerasxla_512_0,,0,,1,CPU-1.package-1,17890640,566393
+0,kerasxla_512_0,,0,,1,CPU-1.dram,3198419,566397
+0,kerasxla_512_1,,0,,1,NVIDIA TITAN X (Pascal),10233000,555870
+0,kerasxla_512_1,,0,,1,NVIDIA TITAN X (Pascal),62178000,555695
+0,kerasxla_512_1,,0,,1,CPU-0.package-0,13669399,557156
+0,kerasxla_512_1,,0,,1,CPU-0.dram,1045388,557191
+0,kerasxla_512_1,,0,,1,CPU-1.package-1,17653824,557196
+0,kerasxla_512_1,,0,,1,CPU-1.dram,3169854,557198
+0,kerasxla_512_2,,0,,1,NVIDIA TITAN X (Pascal),9940000,549907
+0,kerasxla_512_2,,0,,1,NVIDIA TITAN X (Pascal),67571000,549622
+0,kerasxla_512_2,,0,,1,CPU-0.package-0,14012172,570018
+0,kerasxla_512_2,,0,,1,CPU-0.dram,1029767,570034
+0,kerasxla_512_2,,0,,1,CPU-1.package-1,18070083,570038
+0,kerasxla_512_2,,0,,1,CPU-1.dram,3209053,570071
+0,kerasxla_512_3,,0,,1,NVIDIA TITAN X (Pascal),9869000,551047
+0,kerasxla_512_3,,0,,1,NVIDIA TITAN X (Pascal),63281000,552273
+0,kerasxla_512_3,,0,,1,CPU-0.package-0,13623927,553722
+0,kerasxla_512_3,,0,,1,CPU-0.dram,1024228,553760
+0,kerasxla_512_3,,0,,1,CPU-1.package-1,17478959,553764
+0,kerasxla_512_3,,0,,1,CPU-1.dram,3153697,553763
+0,kerasxla_512_4,,0,,1,NVIDIA TITAN X (Pascal),9848000,544287
+0,kerasxla_512_4,,0,,1,NVIDIA TITAN X (Pascal),66555000,547304
+0,kerasxla_512_4,,0,,1,CPU-0.package-0,13766078,548774
+0,kerasxla_512_4,,0,,1,CPU-0.dram,1150958,548804
+0,kerasxla_512_4,,0,,1,CPU-1.package-1,17492570,548810
+0,kerasxla_512_4,,0,,1,CPU-1.dram,3237128,548805
+0,kerasxla_512_5,,0,,1,NVIDIA TITAN X (Pascal),9933000,548258
+0,kerasxla_512_5,,0,,1,NVIDIA TITAN X (Pascal),66095000,549781
+0,kerasxla_512_5,,0,,1,CPU-0.package-0,13541225,551259
+0,kerasxla_512_5,,0,,1,CPU-0.dram,1034004,551268
+0,kerasxla_512_5,,0,,1,CPU-1.package-1,17483719,551274
+0,kerasxla_512_5,,0,,1,CPU-1.dram,3192360,551285
+0,kerasxla_512_6,,0,,1,NVIDIA TITAN X (Pascal),9742000,539257
+0,kerasxla_512_6,,0,,1,NVIDIA TITAN X (Pascal),66605000,541849
+0,kerasxla_512_6,,0,,1,CPU-0.package-0,13537135,551066
+0,kerasxla_512_6,,0,,1,CPU-0.dram,1014635,551090
+0,kerasxla_512_6,,0,,1,CPU-1.package-1,17553666,551096
+0,kerasxla_512_6,,0,,1,CPU-1.dram,3188764,551096
+0,kerasxla_512_7,,0,,1,NVIDIA TITAN X (Pascal),9883000,559628
+0,kerasxla_512_7,,0,,1,NVIDIA TITAN X (Pascal),70995000,548865
+0,kerasxla_512_7,,0,,1,CPU-0.package-0,13589503,552974
+0,kerasxla_512_7,,0,,1,CPU-0.dram,1026875,553013
+0,kerasxla_512_7,,0,,1,CPU-1.package-1,17463334,553018
+0,kerasxla_512_7,,0,,1,CPU-1.dram,3160750,553020
+0,kerasxla_512_8,,0,,1,NVIDIA TITAN X (Pascal),10054000,553849
+0,kerasxla_512_8,,0,,1,NVIDIA TITAN X (Pascal),65121000,553768
+0,kerasxla_512_8,,0,,1,CPU-0.package-0,13888942,565613
+0,kerasxla_512_8,,0,,1,CPU-0.dram,1034953,565661
+0,kerasxla_512_8,,0,,1,CPU-1.package-1,17934403,565663
+0,kerasxla_512_8,,0,,1,CPU-1.dram,3174169,565669
+0,kerasxla_512_9,,0,,1,NVIDIA TITAN X (Pascal),10266000,537233
+0,kerasxla_512_9,,0,,1,NVIDIA TITAN X (Pascal),70401000,560357
+0,kerasxla_512_9,,0,,1,CPU-0.package-0,13809169,562432
+0,kerasxla_512_9,,0,,1,CPU-0.dram,1042711,562501
+0,kerasxla_512_9,,0,,1,CPU-1.package-1,17628983,562509
+0,kerasxla_512_9,,0,,1,CPU-1.dram,3149704,562516

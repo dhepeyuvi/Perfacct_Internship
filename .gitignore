@@ -1,3 +1,9 @@
+# Model Folder
+tmp_saved_models/
+models_lib/
+new_models_lib/
+data/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
