@@ -1,5 +1,5 @@
 ,energy,energy,energy,framework
-gpu_name,Ampere A2,Tesla V100,Titan X,
+gpu_name,Ampere A2,Tesla V100,Titan_X,
 batch_size,,,,
 8,202.6141,285.913,462.9979,Tf
 16,126.0263,154.7344,253.7425,Tf
@@ -55,4 +55,3 @@ batch_size,,,,
 32,10.1995,12.443,22.898,Torch
 64,10.2511,11.1788,23.9699,Torch
 128,9.9886,12.8288,25.5907,Torch
-256,10.4448,12.8111,26.145,Torch

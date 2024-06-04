@@ -1035,17 +1035,15 @@ def ema_power_vs_thrpt_plot(csv_path, save_dir):
         for i, batch_size in enumerate(batch_sizes)
     }
 
-    # Initialize legend handles and labels for batch sizes and frameworks
-    legend_handles_batch_size = []
-    legend_labels_batch_size = []
-    legend_handles_framework = []
-    legend_labels_framework = []
-
     # Iterate over each GPU
     for gpu, df_gpu in df.groupby("gpu_name"):
         # Create a new figure
         plt.figure(figsize=(12, 8))
-
+        # Initialize legend handles and labels for batch sizes and frameworks
+        legend_handles_batch_size = []
+        legend_labels_batch_size = []
+        legend_handles_framework = []
+        legend_labels_framework = []
         # Iterate over each framework for the current GPU
         for i, (framework, df_framework) in enumerate(
             df_gpu.groupby("framework")
@@ -1167,7 +1165,6 @@ def image_per_metric_vs_batch_size_plot(
         )
 
     # Define the order and colors for frameworks
-
     order = list(framework_images.keys())
     frmwrk_colors = {
         frmwrk: sns.color_palette("rainbow", n_colors=len(order))[i]
@@ -1198,14 +1195,14 @@ def image_per_metric_vs_batch_size_plot(
     }
 
     # Plot the results
-    plt.figure(figsize=figsize)
-
     gpu_names = data["gpu_name"].unique()
     for gpu_name in gpu_names:
-        # Plot the data in the specified order
+        plt.figure(figsize=figsize)
+        gpu_data = data[data["gpu_name"] == gpu_name]
+
         for framework in order:
-            if framework in data["framework"].unique():
-                group_data = data[data["framework"] == framework]
+            if framework in gpu_data["framework"].unique():
+                group_data = gpu_data[gpu_data["framework"] == framework]
                 group_data = group_data.sort_values(
                     by="batch_size"
                 )  # Sort by batch size
@@ -1235,7 +1232,7 @@ def image_per_metric_vs_batch_size_plot(
         labels = []
 
         for fw in order:
-            if fw in data["framework"].unique():
+            if fw in gpu_data["framework"].unique():
                 handles.append(
                     plt.Line2D(
                         [0], [0], color=frmwrk_colors[fw], lw=2, label=fw
@@ -1243,18 +1240,19 @@ def image_per_metric_vs_batch_size_plot(
                 )
                 labels.append(fw)
         for bs in batch_sizes:
-            handles.append(
-                plt.Line2D(
-                    [0],
-                    [0],
-                    marker=marker_map[bs],
-                    color="w",
-                    markerfacecolor="k",
-                    markersize=10,
-                    label=f"Batch {bs}",
+            if bs in gpu_data["batch_size"].unique():
+                handles.append(
+                    plt.Line2D(
+                        [0],
+                        [0],
+                        marker=marker_map[bs],
+                        color="w",
+                        markerfacecolor="k",
+                        markersize=10,
+                        label=f"Batch {bs}",
+                    )
                 )
-            )
-            labels.append(f"Batch {bs}")
+                labels.append(f"Batch {bs}")
 
         plt.legend(
             handles=handles,
@@ -1266,12 +1264,13 @@ def image_per_metric_vs_batch_size_plot(
 
         plt.xlabel(xlabel)
         plt.ylabel(ylabel)
-        plt.title(title)
+        plt.title(f"{gpu_name} {title}")
         plt.grid(grid)
         save_path = os.path.join(
             save_dir,
             f"{gpu_name}_images_per_{metric_column}.png",
         )
         # Show the plot
-        plt.savefig(save_path, dpi=200, bbox_inches="tight")
         plt.show()
+        plt.savefig(save_path, dpi=200, bbox_inches="tight")
+        plt.close()
