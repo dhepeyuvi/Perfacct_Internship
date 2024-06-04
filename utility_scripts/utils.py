@@ -1271,6 +1271,6 @@ def image_per_metric_vs_batch_size_plot(
             f"{gpu_name}_images_per_{metric_column}.png",
         )
         # Show the plot
-        plt.show()
         plt.savefig(save_path, dpi=200, bbox_inches="tight")
+        plt.show()
         plt.close()

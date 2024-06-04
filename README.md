@@ -45,22 +45,26 @@
    - `python py_scripts/trt_benchmark_models.py --gpu-id <num>`
 
 - For the initial options regarding gpu and jupyter notebook(jnb) questions in scripts enter 0 and 0.
-- All the throughput and benchmarks will be saved in `benchmark_results/<model_name>/work`
-   - The files are named as <framework>_<num_of_iterations>_it_work_py.csv
-- All EMA files are stored with <pid> name in current working directory.
-   - Rename the files as follows for different frameworks:
+- All the throughput and benchmarks will be saved in `benchmark_results/<model_name>`
+   - The files are named as `<framework_name>_<num_of_iterations>_it_work_py.csv` if the scripts are executed via terminal. However  if jupyter nbs are used, then the csv files end with `_nb.csv`
+- All EMA files are stored with `<pid>` name in current working directory. They need to be renamed and pasted in `benchmark_results/<model_name>` folder
+   - Rename the files as follows for different frameworks `<framework_name>_py.csv`:
       - onnxrt: `onnxrt_py.csv`
       - tf and keras (both frameworks throughputs are captured in one run): `tf_keras_py.csv`
       - tf and keras xla: `tf_keras_xla_py.csv`
       - torch: `torch_py.csv`
       - tensorrt (fp16 and fp32 precision throughputs are captured in one run): `trt_py.csv`
+   - P.S. If you run the jupyter nb's then only change the suffix of ema generated files to `_nb.csv`
+- **NOTE** Once you got the results
+   - Move benchmark results them to a new folder in `benchmark_results/<model_name>/work` for further genration of plots
+   - Move ema results to a new folder `benchmark_results/<model_name>/work/EMA_results`
 
 ## Generate Plots
 - Open the Plot_Generator Nb: `Single_GPU_Plot_Generation.ipynb`
    - Run only the Py titled cells
    - **NOTE** If the plots are inverted, make the invert argument to False in the plotting function call from the nb.
       - It seems to be an issue of matplotlib library, which might be resolved in future updates or so.
-   - From my analysis, there is some difference in thrpt and latencies, if the scripts are run via jupyter nbs, namely:
+   - **NOTE** From my analysis, there is difference in thrpt and latencies, if the python scripts are run when called from jupyter nbs, namely:
       `TF_Keras_Normal_XLAJnb_benchmarking.ipynb` `TRT_Onnxrt_Torch_benchmarking.ipynb`
       - If these nb's are run, then jnb plots can be generated via jnb cells in the Plot generation nb.
 
@@ -79,6 +83,9 @@
 ## Some Plots from Analysis
 |Plot Name|Plot|
 |----|---|
+|Images Processed Per unit Joule Vs Batch Size On Ampere A2|![Plot](./benchmark_results_final/Power_Thrpt_plots/Ampere_A2_images_per_ema_energy_joules.png)|
+|Images Processed Per unit Joule Vs Batch Size On Tesla V100|![Plot](./benchmark_results_final/Power_Thrpt_plots/Tesla_V100_images_per_ema_energy_joules.png)|
+|Images Processed Per unit Joule Vs Batch Size On Titan X|![Plot](./benchmark_results_final/Power_Thrpt_plots/Titan_X_images_per_ema_energy_joules.png)|
 |Power Vs Throughput On Ampere A2|![Plot](./benchmark_results_final/Power_Thrpt_plots/Ampere_A2_pwr_thrpt_plot.png)|
 |Power Vs Throughput On Tesla V100|![Plot](./benchmark_results_final/Power_Thrpt_plots/Tesla_V100_pwr_thrpt_plot.png)|
 |Power Vs Throughput On Titan X|![Plot](./benchmark_results_final/Power_Thrpt_plots/Titan_X_pwr_thrpt_plot.png)|
