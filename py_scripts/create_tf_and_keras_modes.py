@@ -1,17 +1,17 @@
 import click
-import tensorflow as tf
 import tensorflow.keras.applications as tf_app
-from tensorflow.python.tools import optimize_for_inference_lib
-from tensorflow.python.framework.convert_to_constants import (
-    convert_variables_to_constants_v2,
-)
 from skimage import io
 from tensorflow.keras.applications.mobilenet_v3 import (
     preprocess_input,
-    decode_predictions,
 )
 from utility_scripts import utils
 import os
+
+# import tensorflow as tf
+# from tensorflow.python.tools import optimize_for_inference_lib
+# from tensorflow.python.framework.convert_to_constants import (
+#     convert_variables_to_constants_v2,
+# )
 
 
 @click.command()
@@ -42,7 +42,7 @@ def download_and_save(save_dir, img_url, optimize):
         model = builder(weights="imagenet", include_top=True)
 
         if optimize:
-            # NOTE:Optimization is not working for the time being
+            # TODO:Optimization is not working for the time being
             model = optimize_model_for_inference(model)
 
         tf_keras_model_save(model, save_dir, model_name, img_url, preprocessor)

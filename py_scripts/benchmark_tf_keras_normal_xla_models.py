@@ -5,12 +5,14 @@ import os
 import time
 import click
 import numpy as np
+
 # DL Base Libraries
 import tensorflow as tf
 from EMA import (
     EMA_finalize,
     EMA_init,
 )
+
 # Importing builders and preprocessors
 from py_scripts import create_tf_and_keras_modes as tfk
 
@@ -92,7 +94,8 @@ def main(
     )
 
     print(
-        f"\n=============== Benchmarking TensorFlow {model_name} Model ===============\n"
+        f"\n=============== Benchmarking TensorFlow {model_name} Model "
+        f"===============\n"
     )
     tf.keras.backend.clear_session()
     benchmark_model(
@@ -101,16 +104,18 @@ def main(
         model=tf_model,
         xla_enabled=xla_enabled,
         results_save_dir=results_save_dir,
-        save_file_name=f"{'tfxla' if xla_enabled else 'tf'}_{num_iterations}_it_{result_suffix}.csv",
+        save_file_name=f"{'tfxla' if xla_enabled else 'tf'}_\
+            {num_iterations}_it_{result_suffix}.csv",
         num_images=num_images,
         batch_sizes=batch_sizes,
         num_warmup_runs=num_warmup_runs,
         num_model_runs=num_iterations,
         gpu_id=gpu_id,
-        framework_name = f"{'tfxla' if xla_enabled else 'tf'}"
+        framework_name=f"{'tfxla' if xla_enabled else 'tf'}",
     )
     print(
-        f"\n=============== Benchmarking Keras {model_name} Model ===============\n"
+        f"\n=============== Benchmarking Keras {model_name} Model "
+        f"===============\n"
     )
     tf.keras.backend.clear_session()
     print(f"Benchmarking Keras {model_name} Model")
@@ -120,22 +125,24 @@ def main(
         model=keras_model,
         xla_enabled=xla_enabled,
         results_save_dir=results_save_dir,
-        save_file_name=f"{'kerasxla' if xla_enabled else 'keras'}_{num_iterations}_it_{result_suffix}.csv",
+        save_file_name=f"{'kerasxla' if xla_enabled else 'keras'}\
+            _{num_iterations}_it_{result_suffix}.csv",
         num_images=num_images,
         batch_sizes=batch_sizes,
         num_warmup_runs=num_warmup_runs,
         num_model_runs=num_iterations,
         gpu_id=gpu_id,
-        framework_name = f"{'kerasxla' if xla_enabled else 'keras'}"
-
+        framework_name=f"{'kerasxla' if xla_enabled else 'keras'}",
     )
 
     print(
-        f"\n=============== TF & Keras {model_name} Benchmarked  && results saved to {results_save_dir} ===============\n\n"
+        f"\n=============== TF & Keras {model_name} Benchmarked  && results "
+        f"saved to {results_save_dir} ===============\n\n"
     )
 
     # Cleanup.
     EMA_finalize()
+
 
 def load_tf_and_keras_models(load_directory, model_name, img_url):
     preprocessor = tfk.builders_preprocs().get(model_name)[1]
@@ -164,10 +171,12 @@ def load_tf_and_keras_models(load_directory, model_name, img_url):
     krs_total_time = krsload_time + krspred_time
 
     print(
-        f"\n=============== TF Model Compile Time {tf_total_time} secs && Keras Model Compile Time {krs_total_time} secs\n"
+        f"\n=============== TF Model Compile Time {tf_total_time} secs && "
+        f"Keras Model Compile Time {krs_total_time} secs\n"
     )
     print(
-        f"\n=============== TF & Keras formats of {model_name} Model Loading Completed ===============\n\n"
+        f"\n=============== TF & Keras formats of {model_name} Model Loading "
+        f"Completed ===============\n\n"
     )
 
     return tf_model, keras_model
@@ -226,17 +235,15 @@ class GlobalVars:
 
 if __name__ == "__main__":
 
-
     nb = int(input("\n\nIf using a jnb enter 1 else 0\n"))
     uni = int(input("\n\nIf using uni gpu enter 1 else 0\n"))
-    # If everything is run from jupyter nb then results file generated will have a suffix of uni
+    # If everything is run from jupyter nb then results file generated
+    # will have a suffix of uni
     GlobalVars.result_suffix = "uni" if uni else "work"
     GlobalVars.result_suffix += "_nb" if nb else "_py"
 
     print(
-        f"==================== Suffix used with result files will be {GlobalVars.result_suffix}!! ============================="
+        f"==================== Suffix used with result files will be "
+        f"{GlobalVars.result_suffix}!! ============================="
     )
     main()
-
-
-0

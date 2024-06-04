@@ -15,6 +15,8 @@ from EMA import (
     EMA_finalize,
     EMA_init,
 )
+
+
 @click.command()
 @click.option(
     "--url",
@@ -91,7 +93,8 @@ def main(
     )
     if not os.path.exists(save_dir):
         print(
-            f"\n=============== Saving FP32 TF-TRT {model_name} Model ===============\n"
+            f"\n=============== Saving FP32 TF-TRT {model_name} Model "
+            f"===============\n"
         )
         st_time = time.time()
         tf_path = os.path.join(load_directory, model_name)
@@ -100,12 +103,15 @@ def main(
         end_time = time.time()
         total_time = end_time - st_time
         print(
-            f"\n=============== {model_name} converted to TF-TRT {PRECISION} precision and saved at {save_dir} in time {total_time} secs ===============\n"
+            f"\n=============== {model_name} converted to TF-TRT {PRECISION} "
+            f"precision and saved at {save_dir} in time {total_time} secs "
+            f"===============\n"
         )
 
     # Benchmarking the FP32 model
     print(
-        f"\n=============== Benchmarking FP32 TF-TRT {model_name} Model ===============\n"
+        f"\n=============== Benchmarking FP32 TF-TRT {model_name} Model "
+        f"===============\n"
     )
 
     # Release GPU memory before benchmarking
@@ -123,7 +129,8 @@ def main(
 
     total_model_compilation_time = total_time_to_load + preds_time
     print(
-        f"\n=============== TRTFP32 Compile Time: {total_model_compilation_time} secs ===============\n"
+        f"\n=============== TRTFP32 Compile Time: "
+        f"{total_model_compilation_time} secs ===============\n"
     )
 
     btfk.benchmark_model(
@@ -133,7 +140,8 @@ def main(
         model=trt_fp32,
         xla_enabled=False,
         results_save_dir=results_save_dir,
-        save_file_name=f"TFTRT{PRECISION}_{num_iterations}_it_{result_suffix}.csv",
+        save_file_name=f"TFTRT{PRECISION}_{num_iterations}_it\
+            _{result_suffix}.csv",
         num_images=num_images,
         batch_sizes=batch_sizes,
         num_warmup_runs=num_warmup_runs,
@@ -150,7 +158,8 @@ def main(
     )
     if not os.path.exists(save_dir):
         print(
-            f"\n=============== Saving FP16 TF-TRT {model_name} Model ===============\n"
+            f"\n=============== Saving FP16 TF-TRT {model_name} Model "
+            f"===============\n"
         )
         st_time = time.time()
         tf_path = os.path.join(load_directory, model_name)
@@ -159,12 +168,15 @@ def main(
         end_time = time.time()
         total_time = end_time - st_time
         print(
-            f"\n=============== {model_name} converted to TF-TRT {PRECISION} precision and saved at {save_dir} in time {total_time} secs ===============\n"
+            f"\n=============== {model_name} converted to TF-TRT {PRECISION} "
+            f"precision and saved at {save_dir} in time {total_time} secs "
+            f"===============\n"
         )
 
     # Benchmarking the FP16 model
     print(
-        f"\n=============== Benchmarking FP16 TF-TRT {model_name} Model ===============\n"
+        f"\n=============== Benchmarking FP16 TF-TRT {model_name} Model "
+        f"===============\n"
     )
 
     # Release GPU memory before benchmarking
@@ -181,7 +193,8 @@ def main(
 
     total_model_compilation_time = total_time_to_load + preds_time
     print(
-        f"\n=============== TRTFP16 Compile Time: {total_model_compilation_time} secs ===============\n"
+        f"\n=============== TRTFP16 Compile Time: "
+        f"{total_model_compilation_time} secs ===============\n"
     )
 
     btfk.benchmark_model(
@@ -191,7 +204,8 @@ def main(
         model=trt_fp16,
         xla_enabled=False,
         results_save_dir=results_save_dir,
-        save_file_name=f"TFTRT{PRECISION}_{num_iterations}_it_{result_suffix}.csv",
+        save_file_name=f"TFTRT{PRECISION}_{num_iterations}_it\
+            _{result_suffix}.csv",
         num_images=num_images,
         batch_sizes=batch_sizes,
         num_warmup_runs=num_warmup_runs,
@@ -202,9 +216,11 @@ def main(
     )
 
     print(
-        f"\n=============== TF-TRT {model_name} Model Benchmarked && results saved to {results_save_dir} ===============\n\n"
+        f"\n=============== TF-TRT {model_name} Model Benchmarked && results "
+        f"saved to {results_save_dir} ===============\n\n"
     )
     EMA_finalize()
+
 
 class GlobalVars:
     result_suffix = ""
@@ -213,12 +229,14 @@ class GlobalVars:
 if __name__ == "__main__":
     nb = int(input("\n\nIf using a jnb enter 1 else 0\n"))
     uni = int(input("\n\nIf using uni gpu enter 1 else 0\n"))
-    # If everything is run from jupyter nb then results file generated will have a suffix of uni
+    # If everything is run from jupyter nb then results file generated will
+    # have a suffix of uni
     GlobalVars.result_suffix = "uni" if uni else "work"
     GlobalVars.result_suffix += "_nb" if nb else "_py"
 
     print(
-        f"==================== Suffix used with result files will be {GlobalVars.result_suffix}!! ============================="
+        f"==================== Suffix used with result files will be "
+        f"{GlobalVars.result_suffix}!! ============================="
     )
 
     main()

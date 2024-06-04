@@ -4,24 +4,22 @@ from skimage import io
 import os
 import click
 import time
-from skimage import io
 import numpy as np
+
 # Utility py files
 import py_scripts.create_tf_and_keras_modes as tfk
-import py_scripts.benchmark_tf_keras_normal_xla_models as btfk
 
 # DL Base Libraries
 import tensorflow as tf
-from tensorflow.keras.backend import clear_session
 
 # Model Converting & Runtime libraries
-import tf2onnx
 import torch
 from onnx2torch import convert
 from EMA import (
     EMA_finalize,
     EMA_init,
 )
+
 
 @click.command()
 @click.option(
@@ -57,7 +55,7 @@ from EMA import (
 @click.option("--gpu-id", default=0, help="GPU t use, get ID from nvidia-smi")
 @click.option(
     "--batch-sizes",
-    default="8,16,32,64,128,256",
+    default="8,16,32,64,128",
     help="Batch sizes for benchmarking, separated by commas",
 )
 def main(
@@ -98,7 +96,8 @@ def main(
     if not os.path.exists(save_path):
         os.makedirs(save_torch_directory, exist_ok=True)
         print(
-            f"\n=============== Saving Torch {model_name} Model ===============\n"
+            f"\n=============== Saving Torch {model_name} Model "
+            f"===============\n"
         )
         st_time = time.time()
 
@@ -108,13 +107,15 @@ def main(
         end_time = time.time()
         total_time = end_time - st_time
         print(
-            f"\n=============== {model_name} converted to Torch and saved at {save_path} in time {total_time} secs ===============\n"
+            f"\n=============== {model_name} converted to Torch and saved at "
+            f"{save_path} in time {total_time} secs ===============\n"
         )
 
     # Release GPU memory before benchmarking
     tf.keras.backend.clear_session()
     print(
-        f"\n=============== Benchmarking Torch {model_name} Model ===============\n"
+        f"\n=============== Benchmarking Torch {model_name} Model "
+        f"===============\n"
     )
 
     # Load the model
@@ -137,7 +138,8 @@ def main(
 
     total_model_compilation_time = total_load_time + pred_time
     print(
-        f"\n=============== Torch Compile Time: {total_model_compilation_time} secs ===============\n"
+        f"\n=============== Torch Compile Time: {total_model_compilation_time}"
+        f"secs ===============\n"
     )
 
     # Benchmarking Torch Model
@@ -149,6 +151,7 @@ def main(
         preprocessor=preprocessor,
     )
     input_data = input_data.astype(np.float32)
+    print(input_data.shape)
 
     # Results save path
     save_file_name = f"torch_{num_iterations}_it_{result_suffix}.csv"
@@ -171,7 +174,8 @@ def main(
     )
 
     print(
-        f"\n =============== Torch {model_name} Model Benchmarked =============== \n\n"
+        f"\n =============== Torch {model_name} Model Benchmarked "
+        f"=============== \n\n"
     )
     EMA_finalize()
 
@@ -183,12 +187,14 @@ class GlobalVars:
 if __name__ == "__main__":
     nb = int(input("\n\nIf using a jnb enter 1 else 0\n"))
     uni = int(input("\n\nIf using uni gpu enter 1 else 0\n"))
-    # If everything is run from jupyter nb then results file generated will have a suffix of uni
+    # If everything is run from jupyter nb then results file generated
+    # will have a suffix of uni
     GlobalVars.result_suffix = "uni" if uni else "work"
     GlobalVars.result_suffix += "_nb" if nb else "_py"
 
     print(
-        f"==================== Suffix used with result files will be {GlobalVars.result_suffix}!! ============================="
+        f"==================== Suffix used with result files will be "
+        f"{GlobalVars.result_suffix}!! ============================="
     )
 
     main()

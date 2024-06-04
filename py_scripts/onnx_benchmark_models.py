@@ -3,7 +3,6 @@ from utility_scripts import utils
 import os
 import click
 import time
-from enum import Enum
 from skimage import io
 import numpy as np
 
@@ -13,7 +12,6 @@ import py_scripts.benchmark_tf_keras_normal_xla_models as btfk
 
 # DL Base Libraries
 import tensorflow as tf
-from tensorflow.keras.backend import clear_session
 
 # Model Converting & Runtime libraries
 import tf2onnx
@@ -23,6 +21,7 @@ from EMA import (
     EMA_finalize,
     EMA_init,
 )
+
 
 # 3m 33 sec
 @click.command()
@@ -105,7 +104,8 @@ def main(
     if not os.path.exists(save_onnx_directory):
         os.makedirs(save_onnx_directory, exist_ok=True)
         print(
-            f"\n\n=============== Saving ONNX {model_name} Model ==============="
+            f"\n\n=============== Saving ONNX {model_name} Model "
+            f"==============="
         )
         input_shape = (None, 224, 224, 3)
         st_time = time.time()
@@ -125,13 +125,15 @@ def main(
         end_time = time.time()
         total_time = end_time - st_time
         print(
-            f"\n=============== {model_name} converted to onnx and saved at {save_path} in time {total_time} secs ===============\n"
+            f"\n=============== {model_name} converted to onnx and saved at "
+            f"{save_path} in time {total_time} secs ===============\n"
         )
 
     # Release GPU memory before benchmarking
     tf.keras.backend.clear_session()
     print(
-        f"\n=============== Benchmarking ONNX {model_name} Model ===============\n"
+        f"\n=============== Benchmarking ONNX {model_name} Model "
+        f"===============\n"
     )
     st_time = time.time()
     preprocessor = tfk.builders_preprocs().get(model_name)[1]
@@ -152,7 +154,8 @@ def main(
 
     total_model_compilation_time = pred_time + load_time
     print(
-        f"\n=============== OnnxRT Compile Time: {total_model_compilation_time} secs ===============\n"
+        f"\n=============== OnnxRT Compile Time: "
+        f"{total_model_compilation_time} secs ===============\n"
     )
 
     # Benchmark the onnx model
@@ -182,7 +185,8 @@ def main(
     )
 
     print(
-        f"\n=============== ONNX {model_name} Model Benchmarked && results saved to {results_save_dir}===============\n\n"
+        f"\n=============== ONNX {model_name} Model Benchmarked && results "
+        f"saved to {results_save_dir}===============\n\n"
     )
     EMA_finalize()
 
@@ -194,12 +198,14 @@ class GlobalVars:
 if __name__ == "__main__":
     nb = int(input("\n\nIf using a jnb enter 1 else 0\n"))
     uni = int(input("\n\nIf using uni gpu enter 1 else 0\n"))
-    # If everything is run from jupyter nb then results file generated will have a suffix of uni
+    # If everything is run from jupyter nb then results file generated
+    # will have a suffix of uni
     GlobalVars.result_suffix = "uni" if uni else "work"
     GlobalVars.result_suffix += "_nb" if nb else "_py"
 
     print(
-        f"==================== Suffix used with result files will be {GlobalVars.result_suffix}!! ============================="
+        f"==================== Suffix used with result files will be "
+        f"{GlobalVars.result_suffix}!! ============================="
     )
 
     main()

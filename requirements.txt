@@ -9,6 +9,7 @@ python-dotenv
 pycuda==2023.1
 cuda-python==12.3.0
 scikit-learn
+click
 
 # Training Libraries
 tensorflow[and-cuda]==2.14.1
@@ -24,7 +25,7 @@ tf2onnx==1.15.1
 onnx2torch==1.5.13
 # Install at the very last
 # onnx_graphsurgeon --index-url https://pypi.ngc.nvidia.com
-netron==7.3.5 # For model viewing
+# netron==7.3.5 # For model viewing doesn't support python3.9 anymore. Use some other libs for model viewing if necessary
 colored==2.2.4
 
 # Inference Libraries

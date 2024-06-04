@@ -1,15 +1,12 @@
-import numpy as np
-from skimage.transform import resize
-from pathlib import Path
-import seaborn as sns
-
-sns.set_style("darkgrid")
 import matplotlib.pyplot as plt
 import os
 import time
 import torch as trch
 import pandas as pd
 import nvidia_smi
+import numpy as np
+from skimage.transform import resize
+from pathlib import Path
 from tensorflow.keras.applications.mobilenet_v3 import decode_predictions
 from EMA import (
     EMA_region_begin,
@@ -18,6 +15,10 @@ from EMA import (
 )
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
+import seaborn as sns
+
+sns.set_style("darkgrid")
+
 
 np.random.seed(42)
 
@@ -36,7 +37,9 @@ def make_preds(
     if trt:
         preds = model.predict(inp_data)
         print(
-            f"\n=============== Top {top} predictions by {model_name} ===============\n{decode_predictions(preds.numpy(), top=top)[0]}\n\n"
+            f"\n=============== Top {top} predictions by {model_name} "
+            f"===============\n{decode_predictions(preds.numpy(), top=top)[0]}"
+            f"\n\n"
         )
     elif torch:
         inp_data = trch.tensor(
@@ -44,18 +47,23 @@ def make_preds(
         ).cuda()
         preds = model(inp_data).detach().cpu()
         print(
-            f"\n=============== Top {top} predictions by {model_name} ===============\n{decode_predictions(preds.numpy(), top=top)[0]}\n\n"
+            f"\n=============== Top {top} predictions by {model_name} "
+            f"===============\n{decode_predictions(preds.numpy(), top=top)[0]}"
+            f"\n\n"
         )
     elif onnx:
         preds = model.run(["Predictions"], {"input": inp_data})
         preds = np.squeeze(preds, axis=0)
         print(
-            f"\n=============== Top {top} predictions by {model_name} ===============\n{decode_predictions(preds, top=top)[0]}\n\n"
+            f"\n=============== Top {top} predictions by {model_name} "
+            f"===============\n{decode_predictions(preds, top=top)[0]}\n\n"
         )
     else:
         preds = model(inp_data)
         print(
-            f"\n=============== Top {top} predictions by {model_name} ===============\n{decode_predictions(preds.numpy(), top=top)[0]}\n\n"
+            f"\n=============== Top {top} predictions by {model_name} "
+            f"===============\n{decode_predictions(preds.numpy(), top=top)[0]}"
+            "\n\n"
         )
     end_time = time.time()
     pred_time = end_time - st_time
@@ -74,7 +82,8 @@ def batch_sigle_img(
     end_time = time.time()
     total_time = end_time - st_time
     print(
-        f"\n================ Time to load the data onto CPU {total_time} secs ================\n\n"
+        f"\n================ Time to load the data onto CPU {total_time} "
+        f"secs ================\n\n"
     )
     return inp_data, total_time
 
@@ -124,7 +133,8 @@ def warm_up_model(
     end_time = time.time()
     total_time = end_time - st_time
     print(
-        f"\n================ Batch Size {batch_size} WarmUp Time {total_time} secs ================\n\n"
+        f"\n================ Batch Size {batch_size} WarmUp Time "
+        f"{total_time} secs ================\n\n"
     )
 
 
@@ -161,7 +171,8 @@ def measure_performance(
 
     # Actual runs
     for i in range(num_model_runs):
-        # Create a measurement region. First argument is the region name. It will be used in the output.
+        # Create a measurement region. First argument is the region name.
+        # It will be used in the output.
         print(f"region {os.getcwd(), os.getpid()}")
         # Code to be measured.
         region = EMA_region_define(f"{framework_name}_{batch_size}_{i}")
@@ -181,7 +192,9 @@ def measure_performance(
             gpu_memory_per_batch.append(info.used)
 
             # print(
-            #     f"Batch Size: {batch_size} and Batch {j//batch_size + 1}/{len(input_data)//batch_size}: GPU Memory Used: {info.used / (1024**2):.2f} MB"
+            #     f"Batch Size: {batch_size} and Batch "
+            #     f"{j//batch_size + 1}/{len(input_data)//batch_size}:"
+            #     f"GPU Memory Used: {info.used / (1024**2):.2f} MB"
             # )
 
             if trt:
@@ -286,10 +299,12 @@ def batch_model_performances(
     # Save results to CSV
     results_df.to_csv(csv_path, index=False)
     print(
-        f"\n================ Total time to run batch_performance_func {total_time} secs ================\n"
+        f"\n================ Total time to run batch_performance_func "
+        f"{total_time} secs ================\n"
     )
     print(
-        f"\n================ Performance results saved to {csv_path} ================\n\n"
+        f"\n================ Performance results saved to {csv_path} "
+        f"================\n\n"
     )
 
     return total_time
@@ -306,7 +321,8 @@ def print_batch_predictions(all_predictions, pred_decoder, batch_number=None):
                 print(f"{j + 1}: {pred_decoder(prediction_2d, top=1)[0]}")
         else:
             print(
-                f"\nInvalid batch number. Please provide a valid batch number (1 to {len(all_predictions)})"
+                f"\nInvalid batch number. Please provide a valid batch "
+                f"number (1 to {len(all_predictions)})"
             )
     else:
         # Print predictions for all batches
@@ -348,7 +364,7 @@ def read_csv_files_and_add_filename(folder_path):
 
 def filter_data(data, uni, nb):
     df = data.copy()
-    filtered_data = filtered_rows = df[
+    filtered_data = df[
         (
             ((df["uni_or_work"] == "uni") & (df["nb_or_py"] == "nb"))
             if (uni and nb)
@@ -391,12 +407,14 @@ def generate_benchmark_plot(
     title_prefix += " Jnb" if nb else " Py"
     # Specify the folder path where the CSV files are located
     folder_path = csv_folder_path
-    # Call the function to read CSV files, add filename column, and combine into a single DataFrame
+    # Call the function to read CSV files, add filename column, and
+    # combine into a single DataFrame
     result_df = read_csv_files_and_add_filename(folder_path)
     result_df = filter_data(result_df, uni, nb)
     # Define the desired order
     if v100:
-        # Remove the first 4 letters i.e. V100 from the file_name to have normal name of frameworks
+        # Remove the first 4 letters i.e. V100 from the file_name to
+        # have normal name of frameworks
         result_df["framework"] = result_df["framework"].str[4:]
 
     result_df["framework"] = result_df["framework"].str.capitalize()
@@ -479,8 +497,9 @@ def generate_benchmark_plot(
         yticks=yticks,
     )
 
-    ## NOTE: Add this only if the plots are inverted, restart the jupyter nb, if this part is un-commented
-    ## Invert the y-axis
+    # NOTE: Add this only if the plots are inverted, restart the
+    # jupyter nb, if this part is un-commented
+    # Invert the y-axis
     if invert:
         g.ax.invert_yaxis()
 
@@ -522,12 +541,14 @@ def process_csv(df, gpu_ids):
     # Initialize list to store selected rows
     selected_rows = []
 
-    # Iterate over each framework and select the corresponding row indices based on gpu_ids
+    # Iterate over each framework and select the corresponding row
+    # indices based on gpu_ids
     for key, frameworks in gpu_ids.items():
         for framework in frameworks:
             # Filter rows for the current framework
             framework_rows = df[df["framework"] == framework]
-            # Select the nth row for each group defined by ['framework', 'batch_size', 'iteration']
+            # Select the nth row for each group defined by
+            # ['framework', 'batch_size', 'iteration']
             nth_rows = framework_rows.groupby(
                 ["framework", "batch_size", "iteration"]
             ).nth(key)
@@ -620,7 +641,7 @@ def EMA_Plotter(
     v100=False,
     benchmark_col_name="energy",
     nb=False,
-    invert = True,
+    invert=True,
 ):
     if v100:
         title_prefix = "Uni V100" if uni else "Work V100"
@@ -742,7 +763,8 @@ def ordered_results(folder_path, uni, nb, v100=False):
     result_df = filter_data(result_df, uni, nb)
     # Define the desired order
     if v100:
-        # Remove the first 4 letters i.e. V100 from the file_name to have normal name of frameworks
+        # Remove the first 4 letters i.e. V100 from the file_name to
+        # have normal name of frameworks
         result_df["framework"] = result_df["framework"].str[4:]
 
     result_df["framework"] = result_df["framework"].str.capitalize()
@@ -784,7 +806,8 @@ def concatenate_thrpt_latency_csv(column_name, dataframe_gpu_dict, save_path):
         # Filter the concatenated dataframe for each value
         value_df = concatenated_df[concatenated_df["framework"] == value]
 
-        # Pivot the dataframe to have GPU names as columns and batch sizes as rows
+        # Pivot the dataframe to have GPU names as columns and batch sizes
+        # as rows
         pivot_df = value_df.pivot(
             index="Batch_Size", columns="gpu_name", values=[column_name]
         )
@@ -814,7 +837,8 @@ def concatenate_cols(df, column_name, save_path):
         # Filter the concatenated dataframe for each value
         value_df = df[df["framework"] == value]
 
-        # Pivot the dataframe to have GPU names as columns and batch sizes as rows
+        # Pivot the dataframe to have GPU names as columns and batch sizes
+        # as rows
         pivot_df = value_df.pivot(
             index="batch_size", columns="gpu_name", values=[column_name]
         )
@@ -966,57 +990,95 @@ def gpu_plotter(df, benchmark_col_name, model_name, save_folder):
 
 
 def ema_power_vs_thrpt_plot(csv_path, save_dir):
-    df = pd.read_csv(csv_path, index_col=0)
-    # Define markers for batch sizes
-    batch_size_markers = ["o", "s", "d", "^", "v", "x", "+", "D"]
+    # Read the CSV file into a DataFrame
+    df = pd.read_csv(csv_path)
+
+    # Sort the DataFrame by GPU name and throughput
+    df = df.sort_values(by=["gpu_name", "Throughput"])
 
     # Define colors for frameworks
-    framework_colors = sns.color_palette("husl", len(df["framework"].unique()))
+    order = [
+        "Tf",
+        "Tfxla",
+        "Keras",
+        "Kerasxla",
+        "Tftrtfp16",
+        "Tftrtfp32",
+        "Onnxrt",
+        "Torch",
+    ]
+    framework_colors = {
+        frmwrk: sns.color_palette("rainbow", n_colors=len(order))[i]
+        for i, frmwrk in enumerate(order)
+    }
+
+    # Define markers for batch sizes
+    batch_sizes = sorted(df["batch_size"].unique())
+    markers = [
+        "o",
+        "s",
+        "D",
+        "^",
+        "v",
+        "<",
+        ">",
+        "p",
+        "*",
+        "h",
+        "+",
+        "x",
+        "|",
+        "_",
+    ]
+    marker_map = {
+        batch_size: markers[i % len(markers)]
+        for i, batch_size in enumerate(batch_sizes)
+    }
+
+    # Initialize legend handles and labels for batch sizes and frameworks
+    legend_handles_batch_size = []
+    legend_labels_batch_size = []
+    legend_handles_framework = []
+    legend_labels_framework = []
 
     # Iterate over each GPU
-    gpu_names = df["gpu_name"].unique()
-    for gpu in gpu_names:
-        df_gpu = df[df["gpu_name"] == gpu]
-
+    for gpu, df_gpu in df.groupby("gpu_name"):
         # Create a new figure
-        plt.figure(figsize=(10, 6))
-
-        # Initialize legend handles and labels for each GPU
-        legend_handles_batch_size = []
-        legend_labels_batch_size = []
-        legend_handles_framework = []
-        legend_labels_framework = []
+        plt.figure(figsize=(12, 8))
 
         # Iterate over each framework for the current GPU
-        frameworks = df_gpu["framework"].unique()
-        for i, framework in enumerate(frameworks):
-            # Subset the dataframe for the current framework
-            df_framework = df_gpu[df_gpu["framework"] == framework]
-
+        for i, (framework, df_framework) in enumerate(
+            df_gpu.groupby("framework")
+        ):
             # Fit linear regression
-            x = df_framework["Throughput"].values.reshape(-1, 1)
-            y = df_framework["power_watts"].values
             model = LinearRegression()
-            model.fit(x, y)
-            y_pred = model.predict(x)
+            model.fit(
+                df_framework["Throughput"].values.reshape(-1, 1),
+                df_framework["power_watts"].values,
+            )
+            y_pred = model.predict(
+                df_framework["Throughput"].values.reshape(-1, 1)
+            )
 
             # Plot line plot with markers for batch sizes
             for j, batch_size in enumerate(
-                df_framework["batch_size"].unique()
+                sorted(df_framework["batch_size"].unique())
             ):
                 x_batch = df_framework[
                     df_framework["batch_size"] == batch_size
-                ]["Throughput"].values.reshape(-1, 1)
+                ]["Throughput"].values
                 y_batch = df_framework[
                     df_framework["batch_size"] == batch_size
                 ]["power_watts"].values
                 plt.plot(
                     x_batch,
                     y_batch,
-                    marker=batch_size_markers[j],
+                    marker=marker_map[batch_size],
                     linestyle="-",
-                    color=framework_colors[i],
+                    color=framework_colors[framework],
                 )
+
+                # Add legend handles and labels for batch sizes
                 if (
                     i == 0
                 ):  # Add batch size legend handles and labels for the first framework only
@@ -1026,37 +1088,44 @@ def ema_power_vs_thrpt_plot(csv_path, save_dir):
                             [0],
                             linestyle="-",
                             color="black",
-                            marker=batch_size_markers[j],
+                            marker=marker_map[batch_size],
                             markersize=8,
                         )
                     )
                     legend_labels_batch_size.append(f"Batch Size {batch_size}")
 
             # Plot regression line
-            plt.plot(x, y_pred, linestyle="-", color=framework_colors[i])
-
-            # Calculate R^2 value for the current framework
-            r2 = r2_score(y, y_pred)
-
-            # Add framework legend handles and labels
-            legend_handles_framework.append(
-                plt.Line2D([0], [0], linestyle="-", color=framework_colors[i])
+            plt.plot(
+                df_framework["Throughput"],
+                y_pred,
+                linestyle="-",
+                color=framework_colors[framework],
+                label=f"{framework} (R^2 = {model.score(df_framework['Throughput'].values.reshape(-1, 1), df_framework['power_watts'].values):.2f})",
             )
-            legend_labels_framework.append(f"{framework} (R^2 = {r2:.2f})")
+
+            # Add legend handles and labels for frameworks
+            # if (
+            #     j == 0
+            # ):  # Add framework legend handles and labels for the first batch size only
+            legend_handles_framework.append(
+                plt.Line2D(
+                    [0],
+                    [0],
+                    linestyle="solid",
+                    color=framework_colors[framework],
+                )
+            )
+            legend_labels_framework.append(f"{framework}")
 
         # Set title and labels
         plt.title(f"{gpu} Power vs Throughput")
         plt.xlabel("Throughput")
         plt.ylabel("Power (Watts)")
+        plt.legend(loc="upper left")
 
-        # # Show batch size legend
-        # plt.legend(legend_handles_batch_size, legend_labels_batch_size, title='Batch Sizes', loc='upper left', bbox_to_anchor=(1, 1))
-
-        # # Show framework legend
-        # plt.legend(legend_handles_framework, legend_labels_framework, title='Frameworks', loc='lower left', bbox_to_anchor=(1, 0.5))
         # Combine legend handles and labels
         all_handles = legend_handles_batch_size + legend_handles_framework
-        all_labels = legend_labels_batch_size + legend_labels_framework
+        all_labels = legend_labels_batch_size + order
 
         # Show legend
         plt.legend(
@@ -1067,7 +1136,142 @@ def ema_power_vs_thrpt_plot(csv_path, save_dir):
             bbox_to_anchor=(1, 1),
         )
 
+        # Save the plot
         save_path = os.path.join(save_dir, f"{gpu}_pwr_thrpt_plot.png")
+        plt.savefig(save_path, dpi=200, bbox_inches="tight")
+        plt.show()
+
+
+def image_per_metric_vs_batch_size_plot(
+    csv_path,
+    metric_column,
+    framework_images=None,
+    figsize=(12, 8),
+    title=None,
+    xlabel=None,
+    ylabel=None,
+    legend_title=None,
+    legend_loc="upper left",
+    legend_bbox_to_anchor=(1.05, 1),
+    save_dir=None,
+    grid=True,
+):
+    data = pd.read_csv(csv_path, index_col=0)
+    # Calculate the number of images per metric
+    if framework_images is None:
+        framework_images = {}
+    for framework, num_images in framework_images.items():
+        data.loc[data["framework"] == framework, metric_column] = (
+            num_images
+            / data.loc[data["framework"] == framework, metric_column]
+        )
+
+    # Define the order and colors for frameworks
+
+    order = list(framework_images.keys())
+    frmwrk_colors = {
+        frmwrk: sns.color_palette("rainbow", n_colors=len(order))[i]
+        for i, frmwrk in enumerate(order)
+    }
+
+    # Create a mapping from batch size to markers
+    batch_sizes = sorted(data["batch_size"].unique())
+    markers = [
+        "o",
+        "s",
+        "D",
+        "^",
+        "v",
+        "<",
+        ">",
+        "p",
+        "*",
+        "h",
+        "+",
+        "x",
+        "|",
+        "_",
+    ]
+    marker_map = {
+        batch_size: markers[i % len(markers)]
+        for i, batch_size in enumerate(batch_sizes)
+    }
+
+    # Plot the results
+    plt.figure(figsize=figsize)
+
+    gpu_names = data["gpu_name"].unique()
+    for gpu_name in gpu_names:
+        # Plot the data in the specified order
+        for framework in order:
+            if framework in data["framework"].unique():
+                group_data = data[data["framework"] == framework]
+                group_data = group_data.sort_values(
+                    by="batch_size"
+                )  # Sort by batch size
+                color = frmwrk_colors[framework]
+                plt.plot(
+                    group_data["batch_size"],
+                    group_data[metric_column],
+                    color=color,
+                    label=framework,
+                )
+                for batch_size in sorted(group_data["batch_size"].unique()):
+                    batch_data = group_data[
+                        group_data["batch_size"] == batch_size
+                    ]
+                    marker = marker_map[batch_size]
+                    plt.scatter(
+                        batch_data["batch_size"],
+                        batch_data[metric_column],
+                        color=color,
+                        marker=marker,
+                        edgecolor="black",
+                        s=100,
+                    )
+
+        # Create custom legend for batch sizes and frameworks
+        handles = []
+        labels = []
+
+        for fw in order:
+            if fw in data["framework"].unique():
+                handles.append(
+                    plt.Line2D(
+                        [0], [0], color=frmwrk_colors[fw], lw=2, label=fw
+                    )
+                )
+                labels.append(fw)
+        for bs in batch_sizes:
+            handles.append(
+                plt.Line2D(
+                    [0],
+                    [0],
+                    marker=marker_map[bs],
+                    color="w",
+                    markerfacecolor="k",
+                    markersize=10,
+                    label=f"Batch {bs}",
+                )
+            )
+            labels.append(f"Batch {bs}")
+
+        plt.legend(
+            handles=handles,
+            labels=labels,
+            title=legend_title,
+            loc=legend_loc,
+            bbox_to_anchor=legend_bbox_to_anchor,
+        )
+
+        plt.xlabel(xlabel)
+        plt.ylabel(ylabel)
+        plt.title(title)
+        plt.grid(grid)
+        save_path = os.path.join(
+            save_dir,
+            f"{gpu_name}_images_per_{metric_column}.png",
+        )
         # Show the plot
         plt.savefig(save_path, dpi=200, bbox_inches="tight")
         plt.show()
