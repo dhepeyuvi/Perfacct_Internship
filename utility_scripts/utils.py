@@ -1045,85 +1045,88 @@ def ema_power_vs_thrpt_plot(csv_path, save_dir):
         legend_handles_framework = []
         legend_labels_framework = []
         # Iterate over each framework for the current GPU
-        for i, (framework, df_framework) in enumerate(
-            df_gpu.groupby("framework")
-        ):
-            # Fit linear regression
-            model = LinearRegression()
-            model.fit(
-                df_framework["Throughput"].values.reshape(-1, 1),
-                df_framework["power_watts"].values,
-            )
-            y_pred = model.predict(
-                df_framework["Throughput"].values.reshape(-1, 1)
-            )
+        for i, framework in enumerate(order):
+            if framework in df_gpu["framework"].unique():
+                df_framework = df_gpu[df_gpu["framework"] == framework]
 
-            # Plot line plot with markers for batch sizes
-            for j, batch_size in enumerate(
-                sorted(df_framework["batch_size"].unique())
-            ):
-                x_batch = df_framework[
-                    df_framework["batch_size"] == batch_size
-                ]["Throughput"].values
-                y_batch = df_framework[
-                    df_framework["batch_size"] == batch_size
-                ]["power_watts"].values
+                # Fit linear regression
+                model = LinearRegression()
+                model.fit(
+                    df_framework["Throughput"].values.reshape(-1, 1),
+                    df_framework["power_watts"].values,
+                )
+                y_pred = model.predict(
+                    df_framework["Throughput"].values.reshape(-1, 1)
+                )
+                # Calculate R-squared value
+                r2 = model.score(
+                    df_framework["Throughput"].values.reshape(-1, 1),
+                    df_framework["power_watts"].values,
+                )
+
+                # Plot regression line
                 plt.plot(
-                    x_batch,
-                    y_batch,
-                    marker=marker_map[batch_size],
+                    df_framework["Throughput"],
+                    y_pred,
                     linestyle="-",
                     color=framework_colors[framework],
+                    label=f"{framework} (R² = {r2:.2f})",
                 )
-
-                # Add legend handles and labels for batch sizes
-                if (
-                    i == 0
-                ):  # Add batch size legend handles and labels for the first framework only
-                    legend_handles_batch_size.append(
-                        plt.Line2D(
-                            [0],
-                            [0],
-                            linestyle="-",
-                            color="black",
-                            marker=marker_map[batch_size],
-                            markersize=8,
-                        )
+                # Plot line plot with markers for batch sizes
+                for j, batch_size in enumerate(
+                    sorted(df_framework["batch_size"].unique())
+                ):
+                    x_batch = df_framework[
+                        df_framework["batch_size"] == batch_size
+                    ]["Throughput"].values
+                    y_batch = df_framework[
+                        df_framework["batch_size"] == batch_size
+                    ]["power_watts"].values
+                    plt.plot(
+                        x_batch,
+                        y_batch,
+                        marker=marker_map[batch_size],
+                        linestyle="-",
+                        color=framework_colors[framework],
                     )
-                    legend_labels_batch_size.append(f"Batch Size {batch_size}")
 
-            # Plot regression line
-            plt.plot(
-                df_framework["Throughput"],
-                y_pred,
-                linestyle="-",
-                color=framework_colors[framework],
-                label=f"{framework} (R^2 = {model.score(df_framework['Throughput'].values.reshape(-1, 1), df_framework['power_watts'].values):.2f})",
-            )
+                    # Add legend handles and labels for batch sizes
+                    if (
+                        i == 0
+                    ):  # Add batch size legend handles and labels for the first framework only
+                        legend_handles_batch_size.append(
+                            plt.Line2D(
+                                [0],
+                                [0],
+                                linestyle="-",
+                                color="black",
+                                marker=marker_map[batch_size],
+                                markersize=8,
+                            )
+                        )
+                        legend_labels_batch_size.append(
+                            f"Batch Size {batch_size}"
+                        )
 
-            # Add legend handles and labels for frameworks
-            # if (
-            #     j == 0
-            # ):  # Add framework legend handles and labels for the first batch size only
-            legend_handles_framework.append(
-                plt.Line2D(
-                    [0],
-                    [0],
-                    linestyle="solid",
-                    color=framework_colors[framework],
+                # Add legend handles and labels for frameworks
+                legend_handles_framework.append(
+                    plt.Line2D(
+                        [0],
+                        [0],
+                        linestyle="solid",
+                        color=framework_colors[framework],
+                    )
                 )
-            )
-            legend_labels_framework.append(f"{framework}")
+                legend_labels_framework.append(f"{framework} (R² = {r2:.2f})")
 
         # Set title and labels
         plt.title(f"{gpu} Power vs Throughput")
         plt.xlabel("Throughput")
         plt.ylabel("Power (Watts)")
-        plt.legend(loc="upper left")
 
         # Combine legend handles and labels
         all_handles = legend_handles_batch_size + legend_handles_framework
-        all_labels = legend_labels_batch_size + order
+        all_labels = legend_labels_batch_size + legend_labels_framework
 
         # Show legend
         plt.legend(
